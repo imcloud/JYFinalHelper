@@ -1,0 +1,456 @@
+﻿body {
+	margin:0;
+	padding:0;
+	text-align: left;
+	background-color: #F2F2F2;	
+}
+a {
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+	color: #999;
+} 
+#wrapper {
+	font-family: "微軟正黑體", "微軟雅黑體", Arial, SimSun;
+	position: relative;
+	margin: 0 auto;
+	width: 720px;
+	text-align: left;
+}
+#header {
+	height: 55px;
+	position:fixed;
+	top:0px;
+	_position: absolute; /* position fixed for IE6 */
+	_top:expression(documentElement.scrollTop+"px");
+	z-index:1;
+	width: 720px;
+	background-image: url(../img/logo.jpg);
+}
+#header ul{
+	list-style: none;
+	margin: 0;
+	padding-left: 550px;
+	padding-top: 15px;
+	font-size: 14px;
+}
+#header li{
+	position: relative;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#header li a {
+	color: #999;	
+}
+#header li a:hover {
+	color: #666;	
+}
+#content {
+	width: 780px;
+	display: inline;
+	float: left;
+	position: absolute;
+	top: 137px;
+	padding-left: 50px;
+	font-size: 14px;
+	line-height: 1.5em;
+	visibility: visible;
+	left: -30px;
+	height: 1438px;
+
+}
+#content ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#content .abgne_tab {
+	clear: left;
+	width: 720px;
+	margin: 10px 0;
+	padding:0 10px 5px 10px;
+}
+#content ul.tabs {
+	width: 100%;
+	height: 32px;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+}
+#content ul.tabs li {
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border: 1px solid #999999;
+	border-left: none;
+	background-color: #E4E4E4;
+}
+#content ul.tabs li a {
+		display: block;
+		padding: 0 15px;
+		color: #000;
+		border: 1px solid #FFFFCC;
+}
+#content ul.tabs li a:hover {
+		background: #ccc;
+}
+#content ul.tabs li.active  {
+		background: #FFFFCC;
+		border-bottom: 1px solid #FFFFCC;
+}
+#content ul.tabs li.active a:hover {
+	background-color: #ccc;
+}
+#content div.tab_container {
+	width: 780px;
+	clear: left;
+	border: 1px solid #999999;
+	line-height: 1.5em;
+	border-top: none;
+	font-size: 14px;
+	margin-bottom: 1.8em;
+	background-color: #FFFFCC;
+}	
+#content div.tab_container .tab_content {
+	padding: 20px;
+}
+#content div.tab_container .tab_content h2 {
+	margin: 0 0 20px;
+}
+#content .sec_tab {
+		width: 720px;	/* 第2個頁籤區塊的寬度 */
+}
+#content th{
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	padding: 4px 4px 4px 4px;
+	text-transform: uppercase;
+	background-color: #795200;
+	border-right: 0px solid #000;
+	border-bottom: 0px solid #000;
+}
+#content td{
+	border-right: 0px solid #000;
+	border-bottom: 0px solid #000;
+	padding: 4px 4px 4px 4px;
+}
+#content2 {
+	width: 720px;
+	display: inline;
+	float: left;
+	position: absolute;
+	padding-top: 55px;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+#content2 ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#content2 .abgne_tab {
+	clear: left;
+	width: 720px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+#content2 ul.tabs {
+	width: 100%;
+	height: 32px;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+}
+#content2 ul.tabs li {
+	font-size: 14px;
+	float: left;
+	height: 31px;
+	line-height: 31px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+	border: 1px solid #CCCCCC;
+	border-left: none;
+	background-color: #BCBCBC;
+}
+#content2 ul.tabs li a {
+		display: block;
+		padding: 0 20px;
+		color: #000;
+		border: 1px solid #E4E4E4;
+}
+#content2 ul.tabs li a:hover {
+		background: #ccc;
+}
+#content2 ul.tabs li.active  {
+		background: #E4E4E4;
+		border-bottom: 1px solid #E4E4E4;
+}
+#content2 ul.tabs li.active a:hover {
+	background-color: #ccc;
+}
+#content2 div.tab_container {
+	width: 720px;
+	clear: left;
+	border: 1px solid #CCCCCC;
+	line-height: 1.5em;
+	border-top: none;
+	font-size: 14px;
+	margin-bottom: 1.8em;
+	background-color: #E4E4E4;
+}
+#content2 div.tab_container .tab_content {
+	padding: 20px;
+}
+#content2 div.tab_container .tab_content h2 {
+	margin: 0 0 20px;
+}
+#content2 div.tab_container .tab_content .div_01{
+	width: 380px;
+	height: 50px;	
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_02{
+	width:170px;
+	height:50px;
+	float:left;	
+}
+
+#content2 div.tab_container .tab_content .div_03{
+	width: 380px;
+	height: 70px;
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_04{
+	width: 170px;
+	height: 70px;	
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_05{
+	width: 380px;
+	height: 90px;
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_06{
+	width: 170px;
+	height: 90px;	
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_07{
+	width: 380px;
+	height: 110px;
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_08{
+	width: 170px;
+	height: 110px;
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_09{
+	width: 170px;
+	height: 55px;
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_10{
+	width: 380px;
+	height: 130px;
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_11{
+	width: 170px;
+	height: 130px;
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_12{
+	width: 380px;
+	height: 150px;
+	float: left;
+}
+#content2 div.tab_container .tab_content .div_13{
+	width: 170px;
+	height: 150px;
+	float: left;
+}
+#qaContent {
+	width: 720px;
+}
+#qaContent ul.accordionPart li .qa_title {
+	font-size:16px;
+	color: #1186ec;
+}
+#qaContent ul.accordionPart li .qa_title_on {
+	font-size:16px;
+	color: #0D66B7;
+}
+#content2 .sec_tab {
+		width: 720px;	/* 第2個頁籤區塊的寬度 */
+}
+#content2 th{
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	padding: 6px 6px 6px 6px;
+	text-transform: uppercase;
+	background-color: #795200;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+#content2 td{
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 6px 6px 6px 6px;
+}
+#content2 table.tab_2 th{
+	color: #FFFFFF;
+	padding: 1px;
+	text-transform: uppercase;
+	background-color: #795200;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+#content2 table.tab_2 .th_1{
+	color: #FFFFFF;
+	padding: 1px;
+	text-transform: uppercase;
+	background-color: #6F4A00;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+#content2 table.tab_2 td{
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 1px;
+}
+#side {
+	width: 130px;
+	display: inline;
+	float: left;
+	font-size: 14px;
+	position:fixed;
+	top:55px;
+	_position: absolute;  /*position fixed for IE6 */
+	_top:expression(documentElement.scrollTop+"px");
+	z-index:1;
+
+}
+#side ul {
+	margin: 0;
+	padding:0;
+	text-align: center;
+	list-style: none;
+	line-height: normal;
+}
+#side li {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;	
+}
+#side li a {
+	color: #999;
+	text-align: center;
+}
+#side li a:hover {
+	color: #666;	
+}
+#panel {
+	margin: 0 15px;
+	text-align: right;
+	font-size: 12px;
+}
+#panel a{
+	color: #000;
+}
+#jins{
+	padding-top: 30px;
+	position: relative;
+	text-align: center;
+}
+.tab_0{
+	width:720px;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+}
+.tab_1{
+	width:720px;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	text-align:left;
+}
+.tab_2{
+	width:720px;
+	font-size:12px;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	text-align:left;
+}
+.tab_3{
+	width:720px;
+	font-size:12px;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	text-align:left;
+}
+.td_1{
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 6px 6px 6px 6px;
+}
+.td_2{
+	background-color: #CCC;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 6px 6px 6px 6px;
+}
+.c_0{
+	font-size: 14px;
+	color: #666;
+}
+.c_1 {
+	font-size: 22px;
+	font-weight: bolder;
+	color: #990000;
+	padding-left: 5px;
+	border-bottom-width: 1px;
+	border-left-width: 0.75em;
+	border-left-style: solid;
+	border-bottom-color: #990000;
+	line-height: 2em;
+}
+.c_2 {
+	color: #666;
+	font-size: 14px;
+}
+.c_3 {
+	color: #007B00;
+}
+.c_4 {
+	color: #900;
+}
+.c_5 {
+	color: #03C;
+}
+.c_6 {
+	color: #C60;
+}
+.c_7 {
+	color: #F36;
+	font-size: 15px;
+}
+.c_8 {
+	color: #C3C;
+}
+.c_9 {
+	color: #960;
+}
+.c_10 {
+	color: #39F;
+}
+.c_11 {
+	color: #666;
+}
