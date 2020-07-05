@@ -6,107 +6,87 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>金庸群侠传Final0.5.0</title>
   <style type="text/css">
-    <!--
-    @import url("sw.css");
-
-    .STYLE2 {
-      font-size: 14px;
-      font-weight: bold;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    a {
-      cursor: url(10/7.cur);
-    }
-
-    html {
-      overflow-x: hidden;
-      overflow-y: auto;
-    }
-
-    body {
-      cursor: url(10/5.cur);
-      background-image: url(images/body_bg.jpg);
-    }
-
-    .STYLE17 {
-      font-size: 14px;
-      font-weight: normal;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .STYLE19 {
-      font-size: 14px;
-      font-weight: bold;
-      color: #FF0000;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .STYLE21 {
-      color: #999999;
-      font-size: 16px;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .STYLE23 {
-      color:
-        #006633;
-      font-size:
-        14px;
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-    }
-
-    .STYLE28 {
-      color:
-        #999999;
-      font-size:
-        10px;
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-      font-style:
-        italic;
-    }
-    -->
-  </style>
+<!--
+@import url("sccg.css");
+.STYLE2 {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a{cursor:url(10/7.cur);}
+html{
+	overflow-x:scroll;
+    overflow-y:auto;
+}
+body{
+	cursor:url(10/5.cur);
+	overflow-y:hidden;
+	background-image: url(images/body_bg.jpg);
+}
+.STYLE10 {
+	color: #0066FF;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.STYLE17 {
+	font-size: 14px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.STYLE19 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.STYLE21 {
+	color: #999999;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+-->
+html{overflow-y:scroll;}
+.STYLE23 {color: #006633; font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
+.STYLE28 {font-size: 12px; font-weight: bold; color: #FF0000; font-family: Arial, Helvetica, sans-serif; }
+.STYLE29 {
+	font-size: 12px;
+	font-weight: bold;
+}
+.STYLE30 {font-family: Arial, Helvetica, sans-serif; color: #FF0000;}
+</style>
   <script type="text/javascript" src="iframe.js"></script>
   <script type="text/javascript">
-    function MM_swapImgRestore() { //v3.0
-      var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
-    }
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
 
-    function MM_preloadImages() { //v3.0
-      var d = document; if (d.images) {
-        if (!d.MM_p) d.MM_p = new Array();
-        var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
-          if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
-      }
-    }
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
 
-    function MM_findObj(n, d) { //v4.01
-      var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
-        d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
-      }
-      if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
-      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
-      if (!x && d.getElementById) x = d.getElementById(n); return x;
-    }
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 
-    function MM_swapImage() { //v3.0
-      var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
-        if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
-    }
-  </script>
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
 </head>
 
 <body onLoad="MM_preloadImages('images/dh/yin.jpg')">
   <table width="1044" border="0" style="margin-left: 36px;">
     <tr>
-      <td width="1044">
+      <td width="989">
         <table width="100%" border="0">
           <tr>
             <td width="26%" align="center"><A href="index.html"><IMG border=0 src="images/wulin.JPG" width=243
@@ -120,61 +100,66 @@
       </td>
     </tr>
   </table>
-  <table width="1024" border="0" style="margin-left: 36px;">
+  <table  width="1024" border="0" style="margin-left: 36px;">
     <tr>
-      <td width="140" height="26" align="center"><span class="STYLE19">〖金庸群侠传Final〗</span></td>
-      <td width="874" align="center"><span class="STYLE23">如字体太小，请<strong>按住Ctrl键+滚动鼠标滚轮</strong>放大查看</span></td>
+      <td height="26" colspan="2" align="center"><span class="STYLE19">〖金庸群侠传Final〗</td>
+      <td colspan="2" align="left"><span class="STYLE23">觉得字体太小的朋友，请<strong>按住Ctrl键+滚动鼠标滚轮</strong> 放大查看</span></td>
     </tr>
     <tr>
-      <td align="center" valign="top" height="240">
-        <div style="HEIGHT: 30px"></div>
-        <table width="130" border="0" align="center" cellspacing="0" bordercolor="#ff9999"
-          background="images/body_bg1.jpg">
-
+      <td width="20" rowspan="3" align="left" valign="top">&nbsp;</td>
+      <td align="center" valign="top" width="125">
+        <table width="100%" border="0" cellspacing="0">
           <tr>
-            <td width="18%" align="center" valign="middle"><IMG src="images/juanzhou.JPG" width=19 height=19></td>
-            <td width="82%" height="31" align="center" valign="middle" class="STYLE21"><A href="KG01.html"
+            <td width="100%" height="40" align="left" valign="top" class="STYLE17"><p>&nbsp;</p></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" align="center" cellspacing="0" bordercolor="#FF9999" background="images/bg08.gif">
+          <tr>
+            <td align="center" valign="middle" class="STYLE17">&nbsp;</td>
+            <td height="8" align="left" valign="middle" class="STYLE21">&nbsp;</td>
+          </tr>
+          <tr>
+            <td width="32%" align="center" valign="middle" class="STYLE17"><span class="STYLE2"><img src="images/hun/F8.gif" width="22" height="22" border="0" /></span></td>
+            <td width="68%" height="31" align="left" valign="middle" class="STYLE21"><A href="KG01.html"
                 target=KG>新手上路</A></td>
           </tr>
           <tr>
-            <td align="center" valign="middle"><IMG src="images/juanzhou.JPG" width=19 height=19></td>
-            <td height="31" align="center" valign="middle" class=STYLE21><A href="KG02.html" target=KG>天书流程</A></td>
+            <td align="center" valign="middle" class="STYLE17"><span class="STYLE2"><img src="images/hun/2000.gif" width="22" height="25" /></span></td>
+            <td height="31" align="left" valign="middle" class="STYLE17"><a href="KG02.html" target="KG" class="STYLE21">天书攻略</a></td>
           </tr>
           <tr>
-            <td align="center" valign="middle"><IMG src="images/juanzhou.JPG" width=19 height=19></td>
-            <td height="31" align="center" valign="middle" class="STYLE21"><A href="KG03.html" target=KG>登场人物</A></td>
+            <td align="center" valign="middle" class="STYLE17"><span class="STYLE2"><img src="images/hun/ren1.gif" width="19" height="24" /></span></td>
+            <td height="31" align="left" valign="middle" class="STYLE21"><a href="KG03.html" target="KG">游戏资料</a></td>
           </tr>
           <tr>
-            <td align="center" valign="middle"><IMG src="images/juanzhou.JPG" width=19 height=19></td>
-            <td height="31" align="center" valign="middle" class="STYLE21"><A href="ziliao/wugong/quan.html"
-                target=KG>武功秘籍</A></td>
+            <td align="center" valign="middle" class="STYLE17"><span class="STYLE2"><img src="images/hun/anqi.gif" width="21" height="19" /></span></td>
+            <td height="31" align="left" valign="middle" class="STYLE21"><A href="ziliao/wugong/quan.html"
+                target=KG>战斗系统</A></td>
           </tr>
           <tr>
-            <td align="center" valign="middle"><IMG src="images/juanzhou.JPG" width=19 height=19></td>
-            <td height="31" align="center" valign="middle" class="STYLE21"><A href="KG05.html" target=KG>物品装备</A></td>
+            <td align="center" valign="middle" class="STYLE17"><span class="STYLE2"><img src="images/hun/h02.gif" width="24" height="17" /></span></td>
+            <td height="31" align="left" valign="middle" class="STYLE21"><A href="ziliao/qq/qq.html"
+                target=KG>社区分享</A></td>
           </tr>
           <tr>
-            <td align="center" valign="middle"><IMG src="images/juanzhou.JPG" width=19 height=19></td>
-            <td height="31" align="center" valign="middle" class="STYLE21"><A href="ziliao/qq/qq.html"
-                target=KG>游戏下载</A></td>
+            <td align="center" valign="middle" class="STYLE17">&nbsp;</td>
+            <td height="10" align="left" valign="middle" class="STYLE21">&nbsp;</td>
           </tr>
         </table>
-      </td>
-      <td valign="top">
         <table width="100%" border="0">
           <tr>
-            <td align="center" valign="top">
-              <iframe id="KG" name="KG" onload="javascript:{dyniframesize('KG');}" marginwidth="0" marginheight="0"
-                frameborder="0" src="KG07.html" width="100%" height="0" vspace="-5">
-                您的浏览器不支持&quot Frame&quot
-              </iframe>
-            </td>
+            <td>&nbsp;</td>
           </tr>
         </table>
-        <P>
-          <FONT color=#000080>每触发一次攻击适应效果伤害-3%，敌方的层数为8+难度，我方固定为12层，每层1.5%</FONT>
-        </P>
       </td>
+      <td colspan="2" rowspan="2" align="left" valign="top"><table width="865" border="0">
+        <tr>
+          <td align="center" valign="top"><iframe id="KG"  name="KG"onload="javascript:{dyniframesize('KG');}" marginwidth="0" marginheight="0" frameborder="0" scrolling="No" src="kg07.html" width="100%" height="0"  vspace="-5"> 您的浏览器不支持&quot; Frame&quot; </iframe></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top">&nbsp;</td>
     </tr>
     <tr>
       <td height="15" align="left" valign="top">&nbsp;</td>
@@ -182,7 +167,12 @@
             height=17></A></td>
     </tr>
   </table>
-  <hr align="center" width="1024">
+  <table width="1024" border="0" align="center">
+    <tr>
+<!--      <td width="175" height="30" align="right"><img src="images/hun/yqlj.gif" width="158" height="29" /></td>-->
+      <td width="463" align="center"><span class="STYLE28"><img src="images/logo/qun.jpg" width="21" height="21" />QQ交流群：793461788（官方）</span></td>
+    </tr>
+  </table>
 </body>
 
 </html>

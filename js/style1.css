@@ -93,14 +93,14 @@ a:hover{
 		display: block;
 		padding: 0 15px;
 		color: #000;
-		border: 1px solid #FFFFCC;
+		border: 1px solid #FFFFFF;
 }
 #content ul.tabs li a:hover {
 		background: #ccc;
 }
 #content ul.tabs li.active  {
-		background: #FFFFCC;
-		border-bottom: 1px solid #FFFFCC;
+		background: #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
 }
 #content ul.tabs li.active a:hover {
 	background-color: #ccc;
@@ -113,7 +113,7 @@ a:hover{
 	border-top: none;
 	font-size: 14px;
 	margin-bottom: 1.8em;
-	background-color: #FFFFCC;
+	background-color: #FFFFFF;
 }	
 #content div.tab_container .tab_content {
 	padding: 20px;
