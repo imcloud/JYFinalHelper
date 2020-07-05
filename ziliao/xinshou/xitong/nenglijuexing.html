@@ -18,7 +18,7 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 .STYLE2 {
-	color: #009900;
+	color: #ff3399;
 	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -92,19 +92,58 @@ body {
 	font-weight: normal;
 }
 .STYLE19 {font-size: 14px; font-family: Arial, Helvetica, sans-serif; color: #FF0000;}
+.STYLE4 {
+	color: #FF6600;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.STYLE6 {
+	color: #0066CC;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-image: url(../../../images/body_bg.jpg);
+	overflow-x:hidden;
+}
+.STYLE102 {
+	color: #FF0033;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.STYLE104 {
+	font-size: 14px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF3300;
+}
+.STYLE105 {
+	color: #003366;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.STYLE106 {color: #FF0000; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.STYLE107 {color: #0066FF; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.STYLE109 {color: #FF6600; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.STYLE110 {color: #336600; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.STYLE111 {color: #006633; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; }
+.STYLE112 {color: #006633; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.STYLE113 {color: #0066CC; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.STYLE114 {color: #006633; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; }
+.STYLE115 {color: #0000FF; font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
 -->
 </style>
 <script type="text/javascript" src="../../iframe.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
 
+  <script type="text/javascript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
 function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
     d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
@@ -113,80 +152,78 @@ function MM_findObj(n, d) { //v4.01
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
 
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
 function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
-</script>
-<script> 
+//-->
+
+    </script>
+<script>
 function ddd(obj, sType) { 
 var oDiv = document.getElementById(obj); 
 if (sType == 'show') { oDiv.style.display = 'block';} 
 if (sType == 'hide') { oDiv.style.display = 'none';} 
 } 
-</script> 
+</script>
 </head>
 
-<body onLoad="MM_preloadImages('../../images/dh/jing2.jpg')">
-<table width="863" border="0">
+<body onLoad="MM_preloadImages('../../../images/dh/ding.jpg')">
+<table width="860" border="0">
   <tr>
-    <td width="44"  class="STYLE11 STYLE12">&nbsp;</td>
-    <td valign="bottom"  class="STYLE13">&nbsp;</td>
-    <td align="right" valign="bottom"><table width="400" border="0">
-      <tr>
-        <td width="50" height="25" align="center"><A class=STYLE18 href="feihuwaizhuan.html">飞</A></td>
-        <td width="50" align="center"><A class=STYLE18 href="xueshanfeihu.html">雪</A></td>
-        <td width="50" align="center"><A class=STYLE18 href="lianchengjue.html">连</A></td>
-        <td width="50" align="center"><A class=STYLE18 href="tianlongbabu.html">天</A></td>
-        <td width="50" align="center"><A class=STYLE18 href="shediaoyingxiongzhuan.html">射</A></td>
-        <td width="50" align="center"><A class=STYLE18 href="baimaxiaoxifeng.html">白</A></td>
-        <td width="50" align="center"><A class=STYLE18 href="ludingji.html">鹿</A></td>
-        <td align="center"><span class="STYLE18"></span></td>
-      </tr>
-  <tr>
-        <td height="25" align="center"><A class=STYLE18 href="xiaoaojianghu.html">笑</A></td>
-        <td align="center"><A class=STYLE18 href="shujianenchoulu.html">书</A></td>
-        <td align="center"><A class=STYLE18 href="shendiaoxialv.html">神</A></td>
-        <td align="center"><A class=STYLE18 href="xiakexing.html">侠</A></td>
-        <td align="center"><A class=STYLE18 href="yitiantulongji.html">倚</A></td>
-        <td align="center"><A class=STYLE18 href="bixuejian.html">碧</A></td>
-        <td align="center"><A class=STYLE18 href="yuanyangdao.html">鸳</A></td>
-        <td align="center"><span class="STYLE18"></span></td>
-      </tr>
-    </table>      
-    <A onmouseover="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onmouseout=MM_swapImgRestore() href="../../KG02.html" target=KG></A></td>
-    <td align="center"  class="STYLE13"><A onmouseover="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onmouseout=MM_swapImgRestore() href="../../KG02.html" target=KG><IMG id=Image787 border=0 name=Image787 src="../../images/dh/jing1.jpg" width=60 height=70 ></A></td>
+    <td height="40" align="center" class="STYLE111" colspan="2">
+      <table width="100%" border="0">
+        <tr>
+          <td width="110" align="center" class="STYLE111"><a href="liansuozhanyi.html">『连锁战意』</a></td>
+          <td width="110" align="center" class="STYLE111"><a href="yungong.html">『运功系统』</a></td>
+          <td width="110" align="center" class="STYLE111"><a href="tianfu.html">『天赋武功』</a></td>
+          <td width="110" align="center" class="STYLE111"><a href="texiao.html">『特效解析』</a></td>
+          <td width="110" align="center" class="STYLE111"><a href="shaqi.html">『集气与杀气』</a></td>
+          <td width="110" align="center" class="STYLE111"><a href="yichang.html">『异常状态』</a></td>
+          <td width="110" align="center" class="STYLE111">『特技一览』</td>
+        </tr>
+      </table>
+    </td>
   </tr>
   <tr>
-    <td align="center" valign="top">&nbsp;</td>
-    <td colspan="3"><table width="100%" border="1" cellspacing="0" bordercolor="#cccccc" background="../../images/body_bg.jpg">
+    <td colspan="2"><table width="100%" border="1" cellspacing="0" bordercolor="#cccccc" background="../../images/body_bg.jpg">
       <tr>
-        <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">特技</td>
-        <td width="400" background="../../images/body_bg1.jpg" class="STYLE10">获取流程</td>
-        <td width="340" align="center" background="../../images/body_bg1.jpg" class="STYLE10">效果说明</td>
+        <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10" bgcolor="#CCFFFF">特技</td>
+        <td width="400" background="../../images/body_bg1.jpg" class="STYLE10" bgcolor="#CCFFFF">获取流程</td>
+        <td width="340" align="center" background="../../images/body_bg1.jpg" class="STYLE10" bgcolor="#CCFFFF">效果说明</td>
       </tr>
       <tr>
-        <td width="340" align="center" class="STYLE12"><p><span class="STYLE6">系数精通</span></p></td>
+        <td width="140" align="center" class="STYLE112"><p><span class="STYLE2">【系数精通】</span></p></td>
         <td width="340" class="STYLE107">某一系数超过100使用对应系数武功有几率触发</td>
         <td width="340" class="STYLE12">增加一次连击，系数越高几率越高</td>
       </tr>
       <tr>
-        <td width="340" align="center" class="STYLE12"><p><span class="STYLE6">迅闪一击</span></p></td>
+        <td width="140" align="center" class="STYLE112"><p><span class="STYLE2">【迅闪一击】</span></p></td>
         <td width="340" class="STYLE107">使用天赋外功有几率触发</td>
         <td width="340" class="STYLE12">必定暴击，必定出招，增加杀气1000，敌方不能内功护体</td>
       </tr>
       <tr>
-        <td width="340" align="center" class="STYLE12"><p><span class="STYLE6">风天绝影闪</span></p></td>
+        <td width="140" align="center" class="STYLE112"><p><span class="STYLE2">【风天绝影闪】</span></p></td>
         <td width="340" class="STYLE107">一本天书后回家洗脸</td>
         <td width="340" class="STYLE12">战斗必定闪避前两次攻击，之后有几率闪避</td>
       </tr>
       <tr>
-        <td width="340" align="center" class="STYLE12"><p><span class="STYLE6">风天临兵冲</span></p></td>
+        <td width="140" align="center" class="STYLE112"><p><span class="STYLE2">【风天临兵冲】</span></p></td>
         <td width="340" class="STYLE107">两本天书后，女主在队，战斗中被杀气0以下</td>
         <td width="340" class="STYLE12">战斗中有几率集气速度瞬间爆发提升一段时间，期间免疫杀气封穴</td>
       </tr>
       <tr>
-        <td width="340" align="center" class="STYLE12"><p><span class="STYLE6">风天隼旋击</span></p></td>
+        <td width="140" align="center" class="STYLE112"><p><span class="STYLE2">【风天隼旋击】</span></p></td>
         <td width="340" class="STYLE107">获得风林火山功之后，战斗中连击数为3且此次伤害低于60</td>
         <td width="340" class="STYLE12"><p>战斗中有几率给连击附加额外伤害和杀气</p>
           <p>
@@ -200,7 +237,7 @@ if (sType == 'hide') { oDiv.style.display = 'none';}
         </td>
       </tr>
       <tr>
-        <td width="340" align="center" class="STYLE12"><p><span class="STYLE6">如风<br/>徐林<br/>掠火<br/>固山</span></p></td>
+        <td width="140" align="center" class="STYLE112"><p><span class="STYLE2">【如风】<br/>【徐林】<br/>【掠火】<br/>【固山】</span></p></td>
         <td width="340" class="STYLE107">第一本天书拿到后去华山后山找<span class="STYLE6">谢无悠</span>，选择激活其中一个。以后每多2本天书可选择激活其他剩余的</td>
         <td width="340" class="STYLE12">
           <p>疾风：攻击几率发动，行动后集气+200</p>
@@ -210,20 +247,20 @@ if (sType == 'hide') { oDiv.style.display = 'none';}
         </td>
       </tr>
       <tr>
-        <td align="center" class="STYLE6">风火山林功</td>
+        <td align="center" class="STYLE112"><span class="STYLE2">【风火山林功】</span></td>
         <td height="80" class="STYLE107">
           <p>学完谢无悠的如风、徐林、掠火、固山后在华山后山跟软体娃娃对话</p>
                 同时标主获得<span class="STYLE6">《觉醒之苍龙》</span>称号<br ></td>
         <td valign="middle" class="STYLE12"><p>完整的风林火山特技：其疾如风、其徐如林、侵掠如火、不动如山</p></td>
       </tr>
       <tr>
-        <td height="80" align="center" class="STYLE6">六如苍龙诀</td>
+        <td height="80" align="center" class="STYLE112"><span class="STYLE2">【六如苍龙诀】</span></td>
         <td height="80" class="STYLE10"><p class="STYLE107">面板上需留有风林火山功，10本天书后挑战张三丰获胜</p></td>
         <td class="STYLE12">风林火山功基础上增加动如雷霆、难知如阴，并且可同时触发多个</td>
       </tr>
     </table></td>
   </tr>
-  
+
   <tr>
     <td height="15">&nbsp;</td>
     <td colspan="3" >&nbsp;</td>
