@@ -1,351 +1,403 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>无标题文档</title>
-<style type="text/css">
-@import url("../../sccg.css");
-<!--
-.STYLE10 {
-	color: #000000;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE2 {
-	color: #009900;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE201 {
-	color: #009900;
-	font-size: 14px;
-	font-weight:bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE6 {
-	color: #0066FF;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-body {
-	background-image: url(../../images/body_bg.jpg);
-	overflow-x:hidden;
-}
-.STYLE11 {
-	color: #000000;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE12 {
-	color: #006600;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE13 {
-	color: #006600;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-#Layer1 {
-	position:absolute;
-	width:200px;
-	height:70px;
-	z-index:1;
-	top: 271px;
-	background-image: url(../../images/bg_2.gif);
-}
-#Layer2 {
-	position:absolute;
-	width:200px;
-	height:70px;
-	z-index:2;
-	top: 320px;
-	background-image: url(../../images/bg_2.gif);
-}
-#Layer3 {
-	position:absolute;
-	width:200px;
-	height:72px;
-	z-index:3;
-	background-image: url(../../images/bg_2.gif);
-}
-.STYLE1 {
-	color: #FF0000;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE15 {
-	color: #0066FF;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE17 {
-	color: #FF0000;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE18 {
-	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: normal;
-	font-weight: normal;
-}
-.STYLE19 {color: #990000; font-size: 14px; font-family: Arial, Helvetica, sans-serif; }
-.STYLE191 {color: #990000; font-size: 14px;
-font-weight:bold;font-family: Arial, Helvetica, sans-serif; }
-.STYLE20 {
-	color: #333399;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE20a {
-	color: #333399;
-	font-size: 14px;
-	font-weight:bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE21 {
-	color: #666666;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE21a {
-	color: #666666;
-	font-size: 14px;
-	font-weight:bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
--->
-</style>
-<script type="text/javascript" src="../../iframe.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <title>无标题文档</title>
+  <style type="text/css">
+    <!--
+    @import url("../../sccg.css");
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+    .STYLE10 {
+      color: #000000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
-<script> 
-function ddd(obj, sType) { 
-var oDiv = document.getElementById(obj); 
-if (sType == 'show') { oDiv.style.display = 'block';} 
-if (sType == 'hide') { oDiv.style.display = 'none';} 
-} 
-</script> 
+    .STYLE2 {
+      color: #009900;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE201 {
+      color: #009900;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE6 {
+      color: #0066FF;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-image: url(../../images/body_bg.jpg);
+      overflow-x: hidden;
+    }
+
+    .STYLE11 {
+      color: #000000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE12 {
+      color: #006600;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE13 {
+      color: #006600;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #Layer1 {
+      position: absolute;
+      width: 200px;
+      height: 70px;
+      z-index: 1;
+      top: 271px;
+      background-image: url(../../images/bg_2.gif);
+    }
+
+    #Layer2 {
+      position: absolute;
+      width: 200px;
+      height: 70px;
+      z-index: 2;
+      top: 320px;
+      background-image: url(../../images/bg_2.gif);
+    }
+
+    #Layer3 {
+      position: absolute;
+      width: 200px;
+      height: 72px;
+      z-index: 3;
+      background-image: url(../../images/bg_2.gif);
+    }
+
+    .STYLE1 {
+      color: #FF0000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE15 {
+      color: #0066FF;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE17 {
+      color: #FF0000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE18 {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .STYLE19 {
+      color: #990000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE191 {
+      color: #990000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE20 {
+      color: #333399;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE20a {
+      color: #333399;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE21 {
+      color: #666666;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE21a {
+      color: #666666;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    -->
+  </style>
+  <script type="text/javascript" src="../../iframe.js"></script>
+  <script type="text/javascript">
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d = document; if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+      }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+    }
+  </script>
+  <script>
+    function ddd(obj, sType) {
+      var oDiv = document.getElementById(obj);
+      if (sType == 'show') { oDiv.style.display = 'block'; }
+      if (sType == 'hide') { oDiv.style.display = 'none'; }
+    } 
+  </script>
 </head>
 
 <body onLoad="MM_preloadImages('../../images/dh/jing2.jpg')">
-<table width="863" border="0">
-  <tr>
-    <td width="44"  class="STYLE11 STYLE12">&nbsp;</td>
-    <td valign="bottom"  class="STYLE13"><span class="STYLE11 STYLE12"><IMG src="../../images/tianshu/huashanlunjian.jpg" width=175 height=46 ></span></td>
-    <td align="right" valign="bottom"><table width="400" border="0">
-      <tr>
-        <td width="50" height="25" align="center"><A class=STYLE18 href="feihuwaizhuan.html">飞</a></td>
-        <td width="50" align="center"><A class=STYLE18 href="xueshanfeihu.html">雪</a></td>
-        <td width="50" align="center"><A class=STYLE18 href="lianchengjue.html">连</a></td>
-        <td width="50" align="center"><A class=STYLE18 href="tianlongbabu.html">天</a></td>
-        <td width="50" align="center"><A class=STYLE18 href="shediaoyingxiongzhuan.html">射</a></td>
-        <td width="50" align="center"><A class=STYLE18 href="baimaxiaoxifeng.html">白</a></td>
-        <td width="50" align="center"><A class=STYLE18 href="ludingji.html">鹿</a></td>
-        <td align="center"><span class="STYLE18"></span></td>
-      </tr>
-  <tr>
-        <td height="25" align="center"><A class=STYLE18 href="xiaoaojianghu.html">笑</a></td>
-        <td align="center"><A class=STYLE18 href="shujianenchoulu.html">书</a></td>
-        <td align="center"><A class=STYLE18 href="shendiaoxialv.html">神</a></td>
-        <td align="center"><A class=STYLE18 href="xiakexing.html">侠</a></td>
-        <td align="center"><A class=STYLE18 href="yitiantulongji.html">倚</a></td>
-        <td align="center"><A class=STYLE18 href="bixuejian.html">碧</a></td>
-        <td align="center"><A class=STYLE18 href="yuanyangdao.html">鸳</a></td>
-        <td align="center"><span class="STYLE18"></span></td>
-      </tr>
-    </table>      
-    <A onmouseover="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onmouseout=MM_swapImgRestore() href="../../KG02.html" target=KG></a></td>
-    <td align="center"  class="STYLE13"><A onmouseover="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onmouseout=MM_swapImgRestore() href="../../KG02.html" target=KG><IMG id=Image787 border=0 name=Image787 src="../../images/dh/jing1.jpg" width=60 height=70 ></a></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">&nbsp;</td>
-    <td colspan="3"><table width="100%" border="1" cellspacing="0" bordercolor="#cccccc" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">序号</td>
-        <td width="325" background="../../images/body_bg1.jpg" class="STYLE10">流程</td>
-        <td width="415" align="center" background="../../images/body_bg1.jpg" class="STYLE10">备注</td>
-      </tr>
-      <tr>
-        <td height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">一</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">华山后山<span class="STYLE2">（传送代码80）</span></td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE2" rowspan="6">&nbsp;</td>
-        <td class="STYLE10" rowspan="6"><p>收集<span class="STYLE6">2本天书之后</span>，与谢无悠对话</p>
-          <p>主角能力觉醒，可选择解锁六如特效</p>
-          <p class="STYLE2">*每多两本天书可选择解锁一种特效<br 
-            >
-            *六如不再占据面板武功格子，改为隐藏被动生效<br 
-            >
-            <br 
-            >
-            *黄名畅想可选择洗威力小于900的天赋外功1</p></td>
-        <td height="40" class="STYLE6"><span class="STYLE15">【其疾如风】</span>攻击时几率发动，自身行动后集气恢复+500</td></tr>
+  <table width="863" border="0">
+    <tr>
+      <td width="44" class="STYLE11 STYLE12">&nbsp;</td>
+      <td valign="bottom" class="STYLE13"><span class="STYLE11 STYLE12"><IMG
+            src="../../images/tianshu/huashanlunjian.jpg" width=175 height=46></span></td>
+      <td align="right" valign="bottom">
+        <table width="400" border="0">
           <tr>
-           <td height="40" class="STYLE2"><span class="STYLE201">【其徐如林】</span>被攻击时几率发动，集气速度提高2~3点，上限20点</td></tr>
-          <tr>
-           <td height="40" class="STYLE1"><span class="STYLE17">【其掠如火】</span>攻击时几率发动，伤害提高20%，追加3000点气攻</td></tr>
-          <tr>
-           <td height="40" class="STYLE19"><span class="STYLE191">【不动如山】</span>被攻击时几率触发，受到伤害固定为30点（可与软猬甲叠加，只受到10点伤害），免疫杀气、内伤、封穴、流血等状态</td></tr>
-          <tr>
-           <td height="40" class="STYLE20"><span class="STYLE20a">【难知如阴】</span>被攻击时几率发动，打断对方连击，并可移动一次</td></tr>
-          <tr>
-           <td height="40" class="STYLE21"><span class="STYLE21a">【动如雷震】</span>攻击时几率发动，额外连击一次（一轮上限3次）</td></tr>
-      <tr>
-        <td height="120" align="center" class="STYLE19">标准<br 
-            >
-          主角</td>
-        <td class="STYLE10"><p>获得<span class="STYLE6">"觉醒之苍龙"</span>称号
-          </p>
-          <p><span class="STYLE1">除仁者外的标主可领悟绝技大招</span><br 
-            >
-            <br >
-            <br 
-            >
-            <span class="STYLE2"><br 
-            >
-              *标准主角绝技大招触发条件：</span></p>
-          <p class="STYLE2"><strong>至少修炼九个武功</strong></p>
-          <p class="STYLE2"><strong>五系标主需对应兵器值≥120并使用该系武功攻击<BR 
-            >
-          天罡需使用内功攻击<br >医主需体力大于50点<br 
-            >
-          毒主需满中毒值</strong></p></td>
-        <td valign="middle"><table width="100%" border="1" cellspacing="1" bordercolor="#cccccc">
-          <tr>
-            <td width="22%" height="25" class="STYLE10" align="center">盖世神拳</td>
-            <td width="78%" height="50" class="STYLE2"><span class="STYLE13">天道惊雷憾</span> 追加1200气攻<br 
-                  >
-              <span class="STYLE6">攻击无误伤，无视绝对气防<br 
-                  >大幅提高封穴几率</span></td>
+            <td width="50" height="25" align="center"><A class=STYLE18 href="feihuwaizhuan.html">飞</a></td>
+            <td width="50" align="center"><A class=STYLE18 href="xueshanfeihu.html">雪</a></td>
+            <td width="50" align="center"><A class=STYLE18 href="lianchengjue.html">连</a></td>
+            <td width="50" align="center"><A class=STYLE18 href="tianlongbabu.html">天</a></td>
+            <td width="50" align="center"><A class=STYLE18 href="shediaoyingxiongzhuan.html">射</a></td>
+            <td width="50" align="center"><A class=STYLE18 href="baimaxiaoxifeng.html">白</a></td>
+            <td width="50" align="center"><A class=STYLE18 href="ludingji.html">鹿</a></td>
+            <td align="center"><span class="STYLE18"></span></td>
           </tr>
           <tr>
-            <td height="25" class="STYLE10" align="center">剑神一笑</td>
-            <td height="50" class="STYLE2"><span class="STYLE13">一剑镇神州</span> 追加1500气攻<br 
-                  >
-              <span class="STYLE6">攻击无误伤，全屏锁定攻击所有敌人</span></td>
+            <td height="25" align="center"><A class=STYLE18 href="xiaoaojianghu.html">笑</a></td>
+            <td align="center"><A class=STYLE18 href="shujianenchoulu.html">书</a></td>
+            <td align="center"><A class=STYLE18 href="shendiaoxialv.html">神</a></td>
+            <td align="center"><A class=STYLE18 href="xiakexing.html">侠</a></td>
+            <td align="center"><A class=STYLE18 href="yitiantulongji.html">倚</a></td>
+            <td align="center"><A class=STYLE18 href="bixuejian.html">碧</a></td>
+            <td align="center"><A class=STYLE18 href="yuanyangdao.html">鸳</a></td>
+            <td align="center"><span class="STYLE18"></span></td>
+          </tr>
+        </table>
+        <A onmouseover="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onmouseout=MM_swapImgRestore()
+          href="../../KG02.html" target=KG></a>
+      </td>
+      <td align="center" class="STYLE13"><A onmouseover="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)"
+          onmouseout=MM_swapImgRestore() href="../../KG02.html" target=KG><IMG id=Image787 border=0 name=Image787
+            src="../../images/dh/jing1.jpg" width=60 height=70></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#cccccc" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">序号</td>
+            <td width="325" background="../../images/body_bg1.jpg" class="STYLE10">流程</td>
+            <td width="415" align="center" background="../../images/body_bg1.jpg" class="STYLE10">备注</td>
           </tr>
           <tr>
-            <td height="25" class="STYLE10" align="center">傲世狂刀</td>
-            <td height="50" class="STYLE2"><span class="STYLE13">羽葬煌炎斩</span> 追加2000气攻<br 
-                  >
-              <span class="STYLE6">攻击无误伤，，伤害提高30%<br 
-                  >
-使敌方身上的怒气值减半，无视绝对气防</span></td>
+            <td height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">一</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">华山后山<span
+                class="STYLE2">（传送代码80）</span></td>
           </tr>
           <tr>
-            <td height="25" class="STYLE10" align="center">奇门无双</td>
-            <td height="50" class="STYLE2"><strong class="STYLE13">千机龙绝闪</strong> 追加1000气攻<br 
-                  >
-              <span class="STYLE6">攻击无误伤，必定造成封穴与流血</span></td>
+            <td height="50" align="center" class="STYLE2" rowspan="6">&nbsp;</td>
+            <td class="STYLE10" rowspan="6">
+              <p>收集<span class="STYLE6">2本天书之后</span>，与谢无悠对话</p>
+              <p>主角能力觉醒，可选择解锁六如特效</p>
+              <p class="STYLE2">*每多两本天书可选择解锁一种特效<br>
+                *六如不再占据面板武功格子，改为隐藏被动生效<br>
+                <br>
+                *黄名畅想可选择洗威力小于900的天赋外功1
+              </p>
+            </td>
+            <td height="40" class="STYLE6"><span class="STYLE15">【其疾如风】</span>攻击时几率发动，自身行动后集气恢复+500</td>
           </tr>
           <tr>
-            <td height="25" class="STYLE10" align="center">绝世天罡</td>
-            <td height="50" class="STYLE2"><span class="STYLE13">斗焰霸罡劲</span> 追加1300气攻<br 
-                  >
-              <span class="STYLE6">攻击无误伤<br 
-                  >兵器值判定必定优势，无视绝对气防</span></td>
+            <td height="40" class="STYLE2"><span class="STYLE201">【其徐如林】</span>被攻击时几率发动，集气速度提高2~3点，上限20点</td>
           </tr>
           <tr>
-            <td height="25" class="STYLE10" align="center">回天圣手</td>
-            <td height="50" class="STYLE2"><strong class="STYLE13">八门聚万象 </strong>行动后几率触发<br 
-                  >  
-              <span class="STYLE6">发动之后立即获得再次行动机会<br 
-                  >消耗10点体力</span></td>
+            <td height="40" class="STYLE1"><span class="STYLE17">【其掠如火】</span>攻击时几率发动，伤害提高20%，追加3000点气攻</td>
           </tr>
           <tr>
-            <td height="25" class="STYLE10" align="center">灵犀一指</td>
-            <td height="50" class="STYLE2"><strong class="STYLE13">点墨山河 </strong>追加1100气攻<br 
-                  >  
-              <span class="STYLE6">攻击无误伤，攻击不造成怒气<br 
-                  >
-              同时清除敌方一半怒气</span></td>
+            <td height="40" class="STYLE19"><span
+                class="STYLE191">【不动如山】</span>被攻击时几率触发，受到伤害固定为30点（可与软猬甲叠加，只受到10点伤害），免疫杀气、内伤、封穴、流血等状态</td>
           </tr>
           <tr>
-            <td height="25" class="STYLE10" align="center">欲天摩罗</td>
-            <td height="50" class="STYLE2"><strong class="STYLE13">天人五衰 </strong><br 
-                  >  
-              <span class="STYLE6">攻击无误伤<br 
-                  >
-本次攻击必定附加五种异常状态</span></td>
+            <td height="40" class="STYLE20"><span class="STYLE20a">【难知如阴】</span>被攻击时几率发动，打断对方连击，并可移动一次</td>
           </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#cccccc" background="../../images/body_bg.jpg">
-      
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">二</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">华山后山<span class="STYLE2">（传送代码80）</span></td>
-      </tr>
-      <tr>
-        <td height="80" align="center" class="STYLE10">1</td>
-        <td width="400" height="50" class="STYLE10"><p><span class="STYLE6">12本天书之后</span>，对话场景中间的羊，剧情后选择<span class="STYLE6">『是』</span>开启论剑</p>
-          <p class="STYLE2">*选择『否』则事件关闭，不可再次触发</p></td>
-        <td width="340" valign="middle" class="STYLE10">&nbsp;</td>
-      </tr>
-      <tr>
-        <td align="center" class="STYLE10">2</td>
-        <td class="STYLE10"><p>论剑分为<span class="STYLE6">初赛</span>、<span class="STYLE6">复赛</span>和<span class="STYLE6">决赛</span>三场，输掉任意一场均失去夺冠资格</p>
-          <p><span class="STYLE1">论剑参赛NPC：</span>周伯通、阿青、王重阳、林朝英、阿凡提<br 
-            >
-          风清扬、东方不败、扫地老僧、张三丰</p>
-          <p>每场战斗选取一位NPC为对手，已战胜的NPC不可再次挑战</p></td>
-      <td class="STYLE6"><p>挑战奖励：</p>
-        <p class="STYLE12">阿青<span class="STYLE10"> - </span><span class="STYLE19">气防永久提高1200点</span></p>
-        <p class="STYLE12">周伯通<span class="STYLE10"> - </span><span class="STYLE19">使用武功体内消耗减少50%</span></p>
-        <p class="STYLE12">王重阳<span class="STYLE10"> - </span><span class="STYLE19">伤害固定提高20%</span></p>
-        <p><span class="STYLE12">林朝英<span class="STYLE10"> - </span><span class="STYLE19">连击暴击+50%</span></span></p>
-        <p class="STYLE12">阿凡提<span class="STYLE10"> - </span><span class="STYLE19">绝对先手，并使全场敌方的初始集气位置减少500</span></p>
-        <p class="STYLE12">张三丰<span class="STYLE10"> - </span><span class="STYLE19">三围+30，五系兵器值+20</span></p>
-        <p><span class="STYLE12">扫地老僧<span class="STYLE10"> - </span><span class="STYLE19">武学常识+100点</span></span></p>
-        <p><span class="STYLE12">东方不败<span class="STYLE10"> - </span><span class="STYLE19">集气速度+8点</span></span></p>
-        <p class="STYLE12">风清扬<span class="STYLE10"> - </span><span class="STYLE19">获得九剑真传</span>（需已学会独孤九剑）</p></td></tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" >&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" >&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="4">&nbsp;</td>
-  </tr>
-</table>
-<br >
-<br >
+          <tr>
+            <td height="40" class="STYLE21"><span class="STYLE21a">【动如雷震】</span>攻击时几率发动，额外连击一次（一轮上限3次）</td>
+          </tr>
+          <tr>
+            <td height="120" align="center" class="STYLE19">标准<br>
+              主角</td>
+            <td class="STYLE10">
+              <p>获得<span class="STYLE6">"觉醒之苍龙"</span>称号
+              </p>
+              <p><span class="STYLE1">除仁者外的标主可领悟绝技大招</span><br>
+                <br>
+                <br>
+                <span class="STYLE2"><br>
+                  *标准主角绝技大招触发条件：</span>
+              </p>
+              <p class="STYLE2"><strong>至少修炼九个武功</strong></p>
+              <p class="STYLE2"><strong>五系标主需对应兵器值≥120并使用该系武功攻击<BR>
+                  天罡需使用内功攻击<br>医主需体力大于50点<br>
+                  毒主需满中毒值</strong></p>
+            </td>
+            <td valign="middle">
+              <table width="100%" border="1" cellspacing="1" bordercolor="#cccccc">
+                <tr>
+                  <td width="22%" height="25" class="STYLE10" align="center">盖世神拳</td>
+                  <td width="78%" height="50" class="STYLE2"><span class="STYLE13">天道惊雷憾</span> 追加1200气攻<br>
+                    <span class="STYLE6">攻击无误伤，无视绝对气防<br>大幅提高封穴几率</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" class="STYLE10" align="center">剑神一笑</td>
+                  <td height="50" class="STYLE2"><span class="STYLE13">一剑镇神州</span> 追加1500气攻<br>
+                    <span class="STYLE6">攻击无误伤，全屏锁定攻击所有敌人</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" class="STYLE10" align="center">傲世狂刀</td>
+                  <td height="50" class="STYLE2"><span class="STYLE13">羽葬煌炎斩</span> 追加2000气攻<br>
+                    <span class="STYLE6">攻击无误伤，，伤害提高30%<br>
+                      使敌方身上的怒气值减半，无视绝对气防</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" class="STYLE10" align="center">奇门无双</td>
+                  <td height="50" class="STYLE2"><strong class="STYLE13">千机龙绝闪</strong> 追加1000气攻<br>
+                    <span class="STYLE6">攻击无误伤，必定造成封穴与流血</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" class="STYLE10" align="center">绝世天罡</td>
+                  <td height="50" class="STYLE2"><span class="STYLE13">斗焰霸罡劲</span> 追加1300气攻<br>
+                    <span class="STYLE6">攻击无误伤<br>兵器值判定必定优势，无视绝对气防</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" class="STYLE10" align="center">回天圣手</td>
+                  <td height="50" class="STYLE2"><strong class="STYLE13">八门聚万象 </strong>行动后几率触发<br>
+                    <span class="STYLE6">发动之后立即获得再次行动机会<br>消耗10点体力</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" class="STYLE10" align="center">灵犀一指</td>
+                  <td height="50" class="STYLE2"><strong class="STYLE13">点墨山河 </strong>追加1100气攻<br>
+                    <span class="STYLE6">攻击无误伤，攻击不造成怒气<br>
+                      同时清除敌方一半怒气</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" class="STYLE10" align="center">欲天摩罗</td>
+                  <td height="50" class="STYLE2"><strong class="STYLE13">天人五衰 </strong><br>
+                    <span class="STYLE6">攻击无误伤<br>
+                      本次攻击必定附加五种异常状态</span>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#cccccc" background="../../images/body_bg.jpg">
+
+          <tr>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">二</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">华山后山<span
+                class="STYLE2">（传送代码80）</span></td>
+          </tr>
+          <tr>
+            <td height="80" align="center" class="STYLE10">1</td>
+            <td width="400" height="50" class="STYLE10">
+              <p><span class="STYLE6">12本天书之后</span>，对话软体娃娃，剧情后选择<span class="STYLE6">『是』</span>开启论剑</p>
+              <p class="STYLE2">*选择『否』则事件关闭，不可再次触发</p>
+            </td>
+            <td width="340" valign="middle" class="STYLE10">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" class="STYLE10">2</td>
+            <td class="STYLE10">
+              <p>本次论剑挑战<span class="STYLE19">乔峰</span>、<span class="STYLE19">东方不败</span>、<span class="STYLE19">张三丰</span>和<span
+                  class="STYLE19">扫地神僧</span>四人，战斗只进行一场</p>
+              <p><span class="STYLE6">规则1：四神随机分成两组，打赢第一组后第二组直接登场</span></p>
+              <p><span class="STYLE6">规则2：血量打到绿色线以下就算被打败，选手立即离场</span></p>
+              <p></p>
+            </td>
+            <td class="STYLE6">
+              <p>挑战奖励：</p>
+              <p> - </span><span class="STYLE13">攻击+10、防御+10、轻功+10</span></p>
+              <p> - </span><span class="STYLE13">拳掌功夫+10</span></p>
+              <p> - </span><span class="STYLE13">指法技巧+10</span></p>
+              <p> - </span><span class="STYLE13">御剑能力+10</span></p>
+              <p> - </span><span class="STYLE13">耍刀技巧+10</span></p>
+              <p> - </span><span class="STYLE13">奇门兵器+10</span></p>
+              <p> - </span><span class="STYLE13">武常+100</span></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="4">&nbsp;</td>
+    </tr>
+  </table>
+  <br>
+  <br>
 </body>
+
 </html>

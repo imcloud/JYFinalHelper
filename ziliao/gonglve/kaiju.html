@@ -1,479 +1,574 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>无标题文档</title>
-<style type="text/css">
-@import url("../../sccg.css");
-<!--
-.STYLE1 {
-	color: #FF0000;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE10 {
-	color: #000000;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE2 {
-	color: #009900;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE4 {
-	color: #FF6600;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE6 {
-	color: #0066FF;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-body {
-	background-image: url(../../images/body_bg.jpg);
-	overflow-x:hidden;
-	overflow-y:auto;
-}
-}
-.STYLE11 {
-	color: #000000;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE12 {
-	color: #006600;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE13 {
-	color: #006600;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-#Layer1 {
-	position:absolute;
-	width:200px;
-	height:70px;
-	z-index:1;
-	top: 271px;
-	background-image: url(../../images/bg_2.gif);
-}
-#Layer2 {
-	position:absolute;
-	width:200px;
-	height:70px;
-	z-index:2;
-	top: 320px;
-	background-image: url(../../images/bg_2.gif);
-}
-#Layer3 {
-	position:absolute;
-	width:200px;
-	height:72px;
-	z-index:3;
-	background-image: url(../../images/bg_2.gif);
-}
-#Layer5 {
-	position:absolute;
-	width:503px;
-	height:338px;
-	z-index:2;
-	left: 60px;
-	top: 750px;
-	background-image: url(../../images/body_bg.jpg);
-}
-.STYLE14 {
-	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: normal;
-	font-weight: normal;
-}
--->
-</style>
-<script type="text/javascript" src="../../iframe.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <title>无标题文档</title>
+  <style type="text/css">
+    <!--
+    @import url("../../sccg.css");
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+    .STYLE1 {
+      color: #FF0000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
-<script> 
-function ddd(obj, sType) { 
-var oDiv = document.getElementById(obj); 
-if (sType == 'show') { oDiv.style.display = 'block';} 
-if (sType == 'hide') { oDiv.style.display = 'none';} 
-} 
-</script> 
+    .STYLE10 {
+      color: #000000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE2 {
+      color: #009900;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE4 {
+      color: #FF6600;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE6 {
+      color: #0066FF;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-image: url(../../images/body_bg.jpg);
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    }
+
+    .STYLE11 {
+      color: #000000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE12 {
+      color: #006600;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE13 {
+      color: #006600;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #Layer1 {
+      position: absolute;
+      width: 200px;
+      height: 70px;
+      z-index: 1;
+      top: 271px;
+      background-image: url(../../images/bg_2.gif);
+    }
+
+    #Layer2 {
+      position: absolute;
+      width: 200px;
+      height: 70px;
+      z-index: 2;
+      top: 320px;
+      background-image: url(../../images/bg_2.gif);
+    }
+
+    #Layer3 {
+      position: absolute;
+      width: 200px;
+      height: 72px;
+      z-index: 3;
+      background-image: url(../../images/bg_2.gif);
+    }
+
+    #Layer5 {
+      position: absolute;
+      width: 503px;
+      height: 338px;
+      z-index: 2;
+      left: 60px;
+      top: 750px;
+      background-image: url(../../images/body_bg.jpg);
+    }
+
+    .STYLE14 {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+    }
+    -->
+  </style>
+  <script type="text/javascript" src="../../iframe.js"></script>
+  <script type="text/javascript">
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d = document; if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+      }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+    }
+  </script>
+  <script>
+    function ddd(obj, sType) {
+      var oDiv = document.getElementById(obj);
+      if (sType == 'show') { oDiv.style.display = 'block'; }
+      if (sType == 'hide') { oDiv.style.display = 'none'; }
+    }
+  </script>
 </head>
 
 <body onLoad="MM_preloadImages('../../images/dh/jing2.jpg')">
-<table width="863" border="0">
-  <tr>
-    <td width="44"  class="STYLE11 STYLE12">&nbsp;</td>
-    <td valign="bottom"  class="STYLE13"><span class="STYLE11 STYLE12"><img src="../../images/tianshu/kaijusougua.jpg" width="175" height="46" /></span></td>
-    <td align="right" valign="bottom"><table width="400" border="0">
-      <tr>
-        <td width="50" height="25" align="center"><a href="feihuwaizhuan.html" class="STYLE14">飞</a></td>
-        <td width="50" align="center"><a href="xueshanfeihu.html" class="STYLE14">雪</a></td>
-        <td width="50" align="center"><a href="lianchengjue.html" class="STYLE14">连</a></td>
-        <td width="50" align="center"><a href="tianlongbabu.html" class="STYLE14">天</a></td>
-        <td width="50" align="center"><a href="shediaoyingxiongzhuan.html" class="STYLE14">射</a></td>
-        <td width="50" align="center"><a href="baimaxiaoxifeng.html" class="STYLE14">白</a></td>
-        <td width="50" align="center"><a href="ludingji.html" class="STYLE14">鹿</a></td>
-        <td align="center"><span class="STYLE14"></span></td>
-      </tr>
-  <tr>
-        <td height="25" align="center"><a href="xiaoaojianghu.html" class="STYLE14">笑</a></td>
-        <td align="center"><a href="shujianenchoulu.html" class="STYLE14">书</a></td>
-        <td align="center"><a href="shendiaoxialv.html" class="STYLE14">神</a></td>
-        <td align="center"><a href="xiakexing.html" class="STYLE14">侠</a></td>
-        <td align="center"><a href="yitiantulongji.html" class="STYLE14">倚</a></td>
-        <td align="center"><a href="bixuejian.html" class="STYLE14">碧</a></td>
-        <td align="center"><a href="yuanyangdao.html" class="STYLE14">鸳</a></td>
-        <td align="center"><span class="STYLE14"></span></td>
-      </tr>
-    </table>      
-    <a href="../../KG02.html" target="KG" onMouseOver="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onMouseOut="MM_swapImgRestore()"></a></td>
-    <td align="center"  class="STYLE13"><a href="../../KG02.html" target="KG" onMouseOver="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="../../images/dh/jing1.jpg" name="Image787" width="60" height="70" border="0" id="Image787" /></a></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">&nbsp;</td>
-    <td colspan="3"><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">序号</td>
-        <td width="400" background="../../images/body_bg1.jpg" class="STYLE10">流程</td>
-        <td width="340" align="center" background="../../images/body_bg1.jpg" class="STYLE10">奖励</td>
-      </tr>
-      <tr>
-        <td height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">一</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">小村<span class="STYLE2">（传送代码70）</span></td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE10">1</td>
-        <td class="STYLE10"><p>开场剧情后，获得<span class="STYLE2">[银两]*400、[罗盘]、[介绍信]</span><span class="STYLE2"><br />
+  <table width="863" border="0">
+    <tr>
+      <td width="44" class="STYLE11 STYLE12">&nbsp;</td>
+      <td valign="bottom" class="STYLE13"><span class="STYLE11 STYLE12"><img src="../../images/tianshu/kaijusougua.jpg"
+            width="175" height="46" /></span></td>
+      <td align="right" valign="bottom">
+        <table width="400" border="0">
+          <tr>
+            <td width="50" height="25" align="center"><a href="feihuwaizhuan.html" class="STYLE14">飞</a></td>
+            <td width="50" align="center"><a href="xueshanfeihu.html" class="STYLE14">雪</a></td>
+            <td width="50" align="center"><a href="lianchengjue.html" class="STYLE14">连</a></td>
+            <td width="50" align="center"><a href="tianlongbabu.html" class="STYLE14">天</a></td>
+            <td width="50" align="center"><a href="shediaoyingxiongzhuan.html" class="STYLE14">射</a></td>
+            <td width="50" align="center"><a href="baimaxiaoxifeng.html" class="STYLE14">白</a></td>
+            <td width="50" align="center"><a href="ludingji.html" class="STYLE14">鹿</a></td>
+            <td align="center"><span class="STYLE14"></span></td>
+          </tr>
+          <tr>
+            <td height="25" align="center"><a href="xiaoaojianghu.html" class="STYLE14">笑</a></td>
+            <td align="center"><a href="shujianenchoulu.html" class="STYLE14">书</a></td>
+            <td align="center"><a href="shendiaoxialv.html" class="STYLE14">神</a></td>
+            <td align="center"><a href="xiakexing.html" class="STYLE14">侠</a></td>
+            <td align="center"><a href="yitiantulongji.html" class="STYLE14">倚</a></td>
+            <td align="center"><a href="bixuejian.html" class="STYLE14">碧</a></td>
+            <td align="center"><a href="yuanyangdao.html" class="STYLE14">鸳</a></td>
+            <td align="center"><span class="STYLE14"></span></td>
+          </tr>
+        </table>
+        <a href="../../KG02.html" target="KG" onMouseOver="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)"
+          onMouseOut="MM_swapImgRestore()"></a>
+      </td>
+      <td align="center" class="STYLE13"><a href="../../KG02.html" target="KG"
+          onMouseOver="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img
+            src="../../images/dh/jing1.jpg" name="Image787" width="60" height="70" border="0" id="Image787" /></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">序号</td>
+            <td width="400" background="../../images/body_bg1.jpg" class="STYLE10">流程</td>
+            <td width="340" align="center" background="../../images/body_bg1.jpg" class="STYLE10">奖励</td>
+          </tr>
+          <tr>
+            <td height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">一</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">小村<span
+                class="STYLE2">（传送代码70）</span></td>
+          </tr>
+          <tr>
+            <td height="50" align="center" class="STYLE10">1</td>
+            <td class="STYLE10">
+              <p>开场剧情后，获得<span class="STYLE2">[银两]*400、[罗盘]、[介绍信]</span><span class="STYLE2"><br />
+                  <br />
+                </span><span class="STYLE6">调查主角房间脸盆，可以洗脸，恢复满状态</span></p>
+            </td>
+            <td valign="middle">
+              <table width="100%" border="0">
+
+                <tr>
+                  <td width="65"><img src="../../images/01/174.jpg" width="65" height="65" /></td>
+                  <td class="STYLE6"><span class="STYLE12">银两*400</span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/182.jpg" width="65" height="65" /></td>
+                  <td class="STYLE6"><span class="STYLE12">罗盘</span><span class="STYLE2">[剧情道具] </span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/234.jpg" width="65" height="65" /></td>
+                  <td class="STYLE6"><span class="STYLE12">介绍信</span><span class="STYLE2">[剧情道具] </span></td>
+                </tr>
+
+
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height="50" align="center" class="STYLE10">2</td>
+            <td class="STYLE10">与右边房间北丑对话，再对其使用<span class="STYLE12">[银两]</span>，获得<span class="STYLE2">[铁铲]</span></td>
+            <td valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/174.jpg" width="65" height="65" /></td>
+                  <td class="STYLE6"><span class="STYLE1">银两 -5</span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/195.jpg" width="65" height="65" /></td>
+                  <td class="STYLE6"><span class="STYLE12">铁铲</span><span class="STYLE2">[剧情道具]</span></td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" rowspan="2" align="center" class="STYLE2">送信</td>
+            <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">小村<span
+                class="STYLE2">（传送代码70）</span></td>
+          </tr>
+          <tr>
+            <td width="400" height="50" class="STYLE10">
+              <p>身上带有<span class="STYLE2">[介绍信]</span>时，与中间门口的迷之少女对话<br />可选择<span
+                  class="STYLE1">花费100两</span>银子，购买初级秘籍之一：<br><span
+                  class="STYLE4">【松风剑法】、【罗汉拳】、【杨家枪法】<BR />【柴刀十八路】、【铁指诀】</span><br />
+              </p>
+              <p class="STYLE6">*购买秘籍后，失去介绍信</p>
+            </td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/134.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">松风剑法</span><span class="STYLE2">[剑法秘籍] </span>五选一</td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/112.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">罗汉拳</span><span class="STYLE2">[拳掌秘籍] </span>五选一</td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/186.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">杨家枪法</span><span class="STYLE2">[奇门秘籍] </span>五选一</td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/166.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">柴刀十八路</span><span class="STYLE2">[刀法秘籍] </span>五选一</td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/255.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">铁指诀</span><span class="STYLE2">[指法秘籍] </span>五选一</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+
+          <tr>
+            <td width="55" rowspan="2" align="center" class="STYLE2">分支1</td>
+            <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">青城派<span
+                class="STYLE2">（传送代码36）</span></td>
+          </tr>
+          <tr>
+            <td width="400" height="50" class="STYLE10">对着余沧海使用<span class="STYLE2">[介绍信]</span>，获得<span
+                class="STYLE4">【松风剑法】</span></td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+
+                <tr>
+                  <td width="65"><img src="../../images/01/134.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">松风剑法</span><span class="STYLE2">[剑法秘籍] </span></td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" rowspan="2" align="center" class="STYLE2">分支2</td>
+            <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">少林寺<span
+                class="STYLE2">（传送代码93）</span></td>
+          </tr>
+          <tr>
+            <td width="400" height="50" class="STYLE10">对着玄慈使用<span class="STYLE2">[介绍信]</span>，获得<span
+                class="STYLE4">【罗汉拳】</span></td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/112.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">罗汉拳</span><span class="STYLE2">[拳掌秘籍] </span></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" rowspan="2" align="center" class="STYLE2">分支3</td>
+            <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">重阳宫<span
+                class="STYLE2">（传送代码19）</span></td>
+          </tr>
+          <tr>
+            <td width="400" height="50" class="STYLE10">对着丘处机使用<span class="STYLE2">[介绍信]</span>，获得<span
+                class="STYLE4">【杨家枪法】</span></td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/186.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">杨家枪法</span><span class="STYLE2">[奇门秘籍] </span></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" rowspan="2" align="center" class="STYLE2">分支4</td>
+            <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">黎山洞<span
+                class="STYLE2">（传送代码101）</span></td>
+          </tr>
+          <tr>
+            <td width="400" height="50" class="STYLE10">对着黎老汉使用<span class="STYLE2">[介绍信]</span>，获得<span
+                class="STYLE4">【柴刀十八路】</span></td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/166.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE1">柴刀十八路</span><span class="STYLE2">[刀法秘籍] </span></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+
+          <tr>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">小村<span
+                class="STYLE2">（传送代码70）</span></td>
+          </tr>
+
+          <tr>
+            <td height="85" align="center" class="STYLE10">1</td>
+            <td width="400" class="STYLE10">
+              <p>送完介绍信或购买秘籍后，与<span class="STYLE6">迷之少女</span>对话可选择是否开局搜刮<br />
+                <span class="STYLE1"><br />
+                  1、『全搜刮』搜刮后道德-10 </span><br /><span class="STYLE6">2、『部分搜刮』 搜刮后不减道德</span><br />
+                3、『放弃』 放弃开局搜刮<br>
+              </p>
+            </td>
+            <td width="340" valign="middle" class="STYLE12">搜刮可获得一些场景中<strong>不需要战斗</strong>就可以获得的道具</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">天宁寺<span
+                class="STYLE2">（传送代码63）</span></td>
+          </tr>
+          <tr>
+            <td height="50" align="center" class="STYLE10">&nbsp;</td>
+            <td width="400" class="STYLE10">点击功德箱，<span class="STYLE6">道德≥5</span>时，可选择偷钱<br />
+              每偷一次获得<span class="STYLE12">[银两]*100</span>，<span class="STYLE1">道德-5</span></td>
+            <td width="340" valign="middle" class="STYLE12">如果规划路线中，
+              邪线较多，建议先偷钱将道德降为0，再去走邪线做坏事，最后再通过捐钱提高道德</td>
+          </tr>
+          <tr>
+            <td height="50" align="center" class="STYLE10">&nbsp;</td>
+            <td class="STYLE10">道德＜60时，对话功德箱选择[捐赠]捐钱<br />
+              每捐一次，<span class="STYLE1">[银两] -100</span>，<span class="STYLE6">道德+1</span> <span
+                class="STYLE6">（捐钱道德上限为60）</span><br />选择[慈悲]则一次性道德+至60</td>
+            <td valign="middle" class="STYLE12">如果基本不走邪线，一开始建议就将道德捐到60</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">台湾<span
+                class="STYLE2">（传送代码76）</span></td>
+          </tr>
+          <tr>
+            <td height="100" align="center" class="STYLE2">搜刮</td>
+            <td width="400" class="STYLE10">左边房间，调查靠下的箱子，获得：<br />
+              <span class="STYLE12">小还丹*10，白云熊胆丸*10， </span><span class="STYLE4">【夺魄指法】</span><br />
               <br />
-              </span><span class="STYLE6">调查主角房间脸盆，可以洗脸，恢复满状态</span></p></td>
-        <td valign="middle"><table width="100%" border="0">
-          
+              <span class="STYLE12">靠上的箱子开启会获得飞蝗石*10，银两*500，但道德-1</span><br />
+              <span class="STYLE6">（迷之少女搜刮时选择全搜刮会自动搜刮这个箱子）</span><br />
+            </td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/253.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50"><span class="STYLE6"><span class="STYLE1">夺魄指法</span><span
+                        class="STYLE2">[指法秘籍]</span></span></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
           <tr>
-            <td width="65"><img src="../../images/01/174.jpg" width="65" height="65" /></td>
-            <td class="STYLE6"><span class="STYLE12">银两*400</span></td>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">西部农村<span
+                class="STYLE2">（传送代码105）</span></td>
           </tr>
           <tr>
-            <td><img src="../../images/01/182.jpg" width="65" height="65" /></td>
-            <td class="STYLE6"><span class="STYLE12">罗盘</span><span class="STYLE2">[剧情道具] </span></td>
+            <td height="50" align="center" class="STYLE2">分支1</td>
+            <td width="400" class="STYLE10">对着房子里的人使用<span class="STYLE2">[铁铲]</span>，选择<span
+                class="STYLE6">『是』，</span>教小孩武功，之后再<br />
+              选择<span class="STYLE6">『否』</span>拒绝收银子</td>
+            <td width="340" valign="middle" class="STYLE12">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65">&nbsp;</td>
+                  <td class="STYLE6">道德+2</td>
+                </tr>
+              </table>
+            </td>
           </tr>
           <tr>
-            <td><img src="../../images/01/234.jpg" width="65" height="65" /></td>
-            <td class="STYLE6"><span class="STYLE12">介绍信</span><span class="STYLE2">[剧情道具] </span></td>
-          </tr>
-          
-          
-        </table></td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE10">2</td>
-        <td class="STYLE10">与右边房间北丑对话，再对其使用<span class="STYLE12">[银两]</span>，获得<span class="STYLE2">[铁铲]</span></td>
-        <td valign="middle"><table width="100%" border="0">
-          <tr>
-            <td width="65"><img src="../../images/01/174.jpg" width="65" height="65" /></td>
-            <td class="STYLE6"><span class="STYLE1">银两 -5</span></td>
+            <td height="50" align="center" class="STYLE2">分支2</td>
+            <td class="STYLE10">对着房子里的黑衣人使用<span class="STYLE2">[铁铲]</span>，选择<span class="STYLE6">『否』，</span>不教小孩武功
+            </td>
+            <td valign="middle" class="STYLE12">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65">&nbsp;</td>
+                  <td class="STYLE1">道德-10</td>
+                </tr>
+              </table>
+            </td>
           </tr>
           <tr>
-            <td><img src="../../images/01/195.jpg" width="65" height="65" /></td>
-            <td class="STYLE6"><span class="STYLE12">铁铲</span><span class="STYLE2">[剧情道具]</span></td>
+            <td height="50" align="center" class="STYLE2">分支3</td>
+            <td class="STYLE10">对着房子里的黑衣人使用<span class="STYLE2">[铁铲]</span>，选择<span
+                class="STYLE6">『是』，</span>教小孩武功，之后再<br />
+              选择<span class="STYLE6">『是』</span>收取银子</td>
+            <td valign="middle" class="STYLE12">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/174.jpg" width="65" height="65" /></td>
+                  <td class="STYLE12">银两*5</td>
+                </tr>
+
+              </table>
+            </td>
           </tr>
-          
-        </table></td>
-      </tr>
-      
-    </table></td>
-  </tr>
-  
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" rowspan="2" align="center" class="STYLE2">送信</td>
-        <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">小村<span class="STYLE2">（传送代码70）</span></td>
-      </tr>
-      <tr>
-        <td width="400" height="50" class="STYLE10"><p>身上带有<span class="STYLE2">[介绍信]</span>时，与中间门口的迷之少女对话<br />可选择<span class="STYLE1">花费100两</span>银子，购买初级秘籍之一：<br><span class="STYLE4">【松风剑法】、【罗汉拳】、【杨家枪法】<BR />【柴刀十八路】、【铁指诀】</span><br />
-        </p>
-          <p class="STYLE6">*购买秘籍后，失去介绍信</p></td>
-        <td width="340" valign="middle"><table width="100%" border="0">
-            <tr>
-              <td width="65"><img src="../../images/01/134.jpg" width="65" height="65" border="0"/></td>
-              <td class="STYLE6"><span class="STYLE1">松风剑法</span><span class="STYLE2">[剑法秘籍] </span>五选一</td>
-            </tr>
-            <tr>
-              <td><img src="../../images/01/112.jpg" width="65" height="65" border="0"/></td>
-              <td class="STYLE6"><span class="STYLE1">罗汉拳</span><span class="STYLE2">[拳掌秘籍] </span>五选一</td>
-            </tr>
-            <tr>
-              <td><img src="../../images/01/186.jpg" width="65" height="65" border="0"/></td>
-              <td class="STYLE6"><span class="STYLE1">杨家枪法</span><span class="STYLE2">[奇门秘籍] </span>五选一</td>
-            </tr>
-            <tr>
-              <td><img src="../../images/01/166.jpg" width="65" height="65" border="0"/></td>
-              <td class="STYLE6"><span class="STYLE1">柴刀十八路</span><span class="STYLE2">[刀法秘籍] </span>五选一</td>
-            </tr>
-            <tr>
-              <td><img src="../../images/01/255.jpg" width="65" height="65" border="0"/></td>
-              <td class="STYLE6"><span class="STYLE1">铁指诀</span><span class="STYLE2">[指法秘籍] </span>五选一</td>
-            </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      
-      <tr>
-        <td width="55" rowspan="2" align="center" class="STYLE2">分支1</td>
-        <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">青城派<span class="STYLE2">（传送代码36）</span></td>
-      </tr>
-      <tr>
-        <td width="400" height="50" class="STYLE10">对着余沧海使用<span class="STYLE2">[介绍信]</span>，获得<span class="STYLE4">【松风剑法】</span></td>
-        <td width="340" valign="middle"><table width="100%" border="0">
-          
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="15">&nbsp;</td>
+      <td colspan="3">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
           <tr>
-            <td width="65"><img src="../../images/01/134.jpg" width="65" height="65" border="0"/></td>
-            <td class="STYLE6"><span class="STYLE1">松风剑法</span><span class="STYLE2">[剑法秘籍] </span></td>
+            <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">序号</td>
+            <td width="400" background="../../images/body_bg1.jpg" class="STYLE10">流程</td>
+            <td width="340" align="center" background="../../images/body_bg1.jpg" class="STYLE10">奖励</td>
           </tr>
-          
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" rowspan="2" align="center" class="STYLE2">分支2</td>
-        <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">少林寺<span class="STYLE2">（传送代码93）</span></td>
-      </tr>
-      <tr>
-        <td width="400" height="50" class="STYLE10">对着玄慈使用<span class="STYLE2">[介绍信]</span>，获得<span class="STYLE4">【罗汉拳】</span></td>
-        <td width="340" valign="middle"><table width="100%" border="0">
-            <tr>
-              <td width="65"><img src="../../images/01/112.jpg" width="65" height="65" border="0"/></td>
-              <td class="STYLE6"><span class="STYLE1">罗汉拳</span><span class="STYLE2">[拳掌秘籍] </span></td>
-            </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" rowspan="2" align="center" class="STYLE2">分支3</td>
-        <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">重阳宫<span class="STYLE2">（传送代码19）</span></td>
-      </tr>
-      <tr>
-        <td width="400" height="50" class="STYLE10">对着丘处机使用<span class="STYLE2">[介绍信]</span>，获得<span class="STYLE4">【杨家枪法】</span></td>
-        <td width="340" valign="middle"><table width="100%" border="0">
-            <tr>
-              <td width="65"><img src="../../images/01/186.jpg" width="65" height="65" border="0"/></td>
-              <td class="STYLE6"><span class="STYLE1">杨家枪法</span><span class="STYLE2">[奇门秘籍] </span></td>
-            </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" rowspan="2" align="center" class="STYLE2">分支4</td>
-        <td height="20" colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">黎山洞<span class="STYLE2">（传送代码101）</span></td>
-      </tr>
-      <tr>
-        <td width="400" height="50" class="STYLE10">对着黎老汉使用<span class="STYLE2">[介绍信]</span>，获得<span class="STYLE4">【柴刀十八路】</span></td>
-        <td width="340" valign="middle"><table width="100%" border="0">
-            <tr>
-              <td width="65"><img src="../../images/01/166.jpg" width="65" height="65" border="0"/></td>
-              <td class="STYLE6"><span class="STYLE1">柴刀十八路</span><span class="STYLE2">[刀法秘籍] </span></td>
-            </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">小村<span class="STYLE2">（传送代码70）</span></td>
-      </tr>
-      
-      <tr>
-        <td height="85" align="center" class="STYLE10">1</td>
-        <td width="400" class="STYLE10"><p>送完介绍信或购买秘籍后，与<span class="STYLE6">迷之少女</span>对话可选择是否开局搜刮<br />
-            <span class="STYLE1"><br />
-              1、『全搜刮』搜刮后道德-10 </span><br /><span class="STYLE6">2、『部分搜刮』 搜刮后不减道德</span><br />
-          3、『放弃』 放弃开局搜刮<br>
-        </p>
-          </td>
-        <td width="340" valign="middle" class="STYLE12">搜刮可获得一些场景中<strong>不需要战斗</strong>就可以获得的道具</td>
-      </tr>
-    </table></td>
-  </tr>
-  
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">天宁寺<span class="STYLE2">（传送代码63）</span></td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE10">&nbsp;</td>
-        <td width="400" class="STYLE10">点击功德箱，<span class="STYLE6">道德≥5</span>时，可选择偷钱<br />
-          每偷一次获得<span class="STYLE12">[银两]*100</span>，<span class="STYLE1">道德-5</span></td>
-        <td width="340" valign="middle" class="STYLE12">如果规划路线中，
-          邪线较多，建议先偷钱将道德降为0，再去走邪线做坏事，最后再通过捐钱提高道德</td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE10">&nbsp;</td>
-        <td class="STYLE10">道德＜60时，对话功德箱选择[捐赠]捐钱<br />
-          每捐一次，<span class="STYLE1">[银两] -100</span>，<span class="STYLE6">道德+1</span> <span class="STYLE6">（捐钱道德上限为60）</span><br />选择[慈悲]则一次性道德+至60</td>
-        <td valign="middle" class="STYLE12">如果基本不走邪线，一开始建议就将道德捐到60</td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">台湾<span class="STYLE2">（传送代码76）</span></td>
-      </tr>
-      <tr>
-        <td height="100" align="center" class="STYLE2">搜刮</td>
-        <td width="400" class="STYLE10">左边房间，调查靠下的箱子，获得：<br />
-            <span class="STYLE12">小还丹*10，白云熊胆丸*10，            </span><span class="STYLE4">【夺魄指法】</span><br />
-            <br />
-            <span class="STYLE12">靠上的箱子开启会获得飞蝗石*10，银两*500，但道德-1</span><br />
-            <span class="STYLE6">（迷之少女搜刮时选择全搜刮会自动搜刮这个箱子）</span><br /></td>
-        <td width="340" valign="middle"><table width="100%" border="0">
-            <tr>
-              <td width="65"><img src="../../images/01/253.jpg" width="65" height="65" border="0"/></td>
-              <td height="50" ><span class="STYLE6"><span class="STYLE1">夺魄指法</span><span class="STYLE2">[指法秘籍]</span></span></td>
-            </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">西部农村<span class="STYLE2">（传送代码105）</span></td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE2">分支1</td>
-        <td width="400" class="STYLE10">对着房子里的人使用<span class="STYLE2">[铁铲]</span>，选择<span class="STYLE6">『是』，</span>教小孩武功，之后再<br />
-          选择<span class="STYLE6">『否』</span>拒绝收银子</td>
-        <td width="340" valign="middle" class="STYLE12"><table width="100%" border="0">
           <tr>
-            <td width="65">&nbsp;</td>
-            <td class="STYLE6">道德+2</td>
+            <td height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">云岭洞<span
+                class="STYLE2">（传送代码41）</span></td>
           </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE2">分支2</td>
-        <td class="STYLE10">对着房子里的黑衣人使用<span class="STYLE2">[铁铲]</span>，选择<span class="STYLE6">『否』，</span>不教小孩武功</td>
-        <td valign="middle" class="STYLE12"><table width="100%" border="0">
           <tr>
-            <td width="65">&nbsp;</td>
-            <td class="STYLE1">道德-10</td>
+            <td height="50" align="center" class="STYLE2">山洞MM</td>
+            <td class="STYLE10">
+              获得一本天书后可触发剧情。
+            </td>
+            <td valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td align="center" class="STYLE6"></td>
+                </tr>
+              </table>
+            </td>
           </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE2">分支3</td>
-        <td class="STYLE10">对着房子里的黑衣人使用<span class="STYLE2">[铁铲]</span>，选择<span class="STYLE6">『是』，</span>教小孩武功，之后再<br />
-选择<span class="STYLE6">『是』</span>收取银子</td>
-        <td valign="middle" class="STYLE12"><table width="100%" border="0">
-          <tr>
-            <td width="65"><img src="../../images/01/174.jpg" width="65" height="65" /></td>
-            <td class="STYLE12">银两*5</td>
-          </tr>
-          
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="15">&nbsp;</td>
-    <td colspan="3" ><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">序号</td>
-        <td width="400" background="../../images/body_bg1.jpg" class="STYLE10">流程</td>
-        <td width="340" align="center" background="../../images/body_bg1.jpg" class="STYLE10">奖励</td>
-      </tr>
-      <tr>
-        <td height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">-</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">云岭洞<span class="STYLE2">（传送代码41）</span></td>
-      </tr>
-      <tr>
-        <td height="50" align="center" class="STYLE2">山洞MM</td>
-        <td class="STYLE10"><p>与里面的白衣女子对话，可收队友入队，可选择（五选一）：<br />
-          <br />          
-          <span class="STYLE1">李逍遥（探云手）</span></p>
-          <p><span class="STYLE1">赵灵儿（五气朝元）</span></p>
-          <p><span class="STYLE1">林月如（乾坤一掷）</span></p>
-          <p><span class="STYLE1">阿奴（万蛊蚀天）</span></p>
-          <p><span class="STYLE1">喵大山（道具：免疫开局前三次攻击）</span><br />
-            <span class="STYLE12">*需打败无酒不欢，失败有变性惩戒</span>&hellip;</p></td>
-        <td valign="middle"><table width="100%" border="0">
-          <tr>
-            <td align="center" class="STYLE6">详情参见&ldquo;登场人物&rdquo;及&ldquo;物品装备&rdquo;</td>
-            </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  
-  
-  
-  <tr>
-    <td colspan="4">&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td colspan="3">&nbsp;</td>
-  </tr>
-</table>
-<br />
-<br />
+        </table>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td colspan="4">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="3">&nbsp;</td>
+    </tr>
+  </table>
+  <br />
+  <br />
 </body>
+
 </html>

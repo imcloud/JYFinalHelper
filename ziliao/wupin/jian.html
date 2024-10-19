@@ -1,518 +1,624 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>剑</title>
-<style type="text/css">
-@import url("../../sw.css");
-<!--
-body {
-	background-image: url(../../images/body_bg.jpg);
-	overflow-x:hidden;
-}
-.s5 {
-	color: #060;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.s6 {
-	color: #060;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE3 {
-	font-size: 14px;
-	color: #000000;
-	font-weight: normal;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE4 {
-	font-size: 14px;
-	color: #06C;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE5 {
-	font-size: 14px;
-	color: #996600;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: normal;
-}
-#Layer1 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 60px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer2 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 110px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer3 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 180px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer4 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 200px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer5 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 300px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer6 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 500px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer7 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 600px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer8 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 700px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer9 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 700px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer10 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 380px;
-	background-image: url(../../images/bg_3.gif);
-}
-#Layer11 {
-	position: absolute;
-	width: 212px;
-	height: 75px;
-	z-index: 1;
-	left: 65px;
-	top: 420px;
-	background-image: url(../../images/bg_3.gif);
-}
-.STYLE9 {
-	color: #999999;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-}
-.STYLE10 {color: #000000}
-.STYLE12 {font-size: 14px; color: #0000CC; font-family: Arial, Helvetica, sans-serif; }
-.STYLE13 {
-	color: #FF0000;
-	font-weight: bold;
-}
-.STYLE14 {color: #00FF00}
--->
-</style>
-<script type="text/javascript" src="../../iframe.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <title>剑</title>
+  <style type="text/css">
+    <!--
+    @import url("../../sw.css");
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+    body {
+      background-image: url(../../images/body_bg.jpg);
+      overflow-x: hidden;
+    }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
-<script> 
-function ddd(obj, sType) { 
-var oDiv = document.getElementById(obj); 
-if (sType == 'show') { oDiv.style.display = 'block';} 
-if (sType == 'hide') { oDiv.style.display = 'none';} 
-} 
-</script> 
+    .s5 {
+      color: #060;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .s6 {
+      color: #060;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE3 {
+      font-size: 14px;
+      color: #000000;
+      font-weight: normal;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE4 {
+      font-size: 14px;
+      color: #06C;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE5 {
+      font-size: 14px;
+      color: #996600;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: normal;
+    }
+
+    #Layer1 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 60px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer2 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 110px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer3 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 180px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer4 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 200px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer5 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 300px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer6q {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 475px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer6jz {
+      position: absolute;
+      width: 412px;
+      height: 243px;
+      z-index: 2;
+      left: 120px;
+      top: 405px;
+      background-image: url(../../images/bg07.gif);
+    }
+
+    #Layer6q1 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 550px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer6sn {
+      position: absolute;
+      width: 412px;
+      height: 243px;
+      z-index: 2;
+      left: 120px;
+      top: 470px;
+      background-image: url(../../images/bg07.gif);
+    }
+
+    #Layer6 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 610px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+
+    #Layer7 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 600px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer8 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 700px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer9 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 700px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer10 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 380px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    #Layer11 {
+      position: absolute;
+      width: 212px;
+      height: 75px;
+      z-index: 1;
+      left: 65px;
+      top: 420px;
+      background-image: url(../../images/bg_3.gif);
+    }
+
+    .STYLE9 {
+      color: #999999;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .STYLE10 {
+      color: #000000
+    }
+
+    .STYLE12 {
+      font-size: 14px;
+      color: #0000CC;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE13 {
+      color: #FF0000;
+      font-weight: bold;
+    }
+
+    .STYLE14 {
+      color: #00FF00
+    }
+    -->
+  </style>
+  <script type="text/javascript" src="../../iframe.js"></script>
+  <script type="text/javascript">
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d = document; if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+      }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+    }
+  </script>
+  <script>
+    function ddd(obj, sType) {
+      var oDiv = document.getElementById(obj);
+      if (sType == 'show') { oDiv.style.display = 'block'; }
+      if (sType == 'hide') { oDiv.style.display = 'none'; }
+    }
+  </script>
 </head>
 
 <body onLoad="MM_preloadImages('../../images/dh/qin.jpg','../../images/dh/shi.jpg')">
 
-<table width="860" border="0">
-    
-   <tr>
-    <td height="100%"><table width="100%" border="1" cellspacing="0" bordercolor="#cccccc">
-      <tr>
-        <td height="19" colspan="2" align="center" bgcolor="#ffffcc"><span class="STYLE3">名称</span></td>
-        <td width="89" align="center" bgcolor="#ffffcc"><span class="STYLE3">装备需求</span></td>
-        <td width="121" align="center" bgcolor="#ffffcc"><span class="STYLE3">加成</span></td>
-        <td width="485" align="center" bgcolor="#ffffcc"><span class="STYLE3">特效</span></td>
-      </tr>
-      <tr>
-        <td width="60" align="center"><A onmouseover="ddd('Layer1', 'show');" onmouseout ="ddd('Layer1', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/42.jpg" width=60 height=60 ></A></td>
-        <td width="77" align="center" class="STYLE3">白虹剑
-          <div style="DISPLAY: none" id="Layer1" onMouseOver ="ddd('Layer1', 'show');" 
-            onMouseOut="ddd('Layer1', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【白虹剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*冯铁匠出售<br 
-                  >
-&nbsp;&nbsp;<span class="STYLE5">300两</span></td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑30</td>
-        <td align="center" class="STYLE3">攻击+10</td>
-        <td align="center" class="STYLE3">&nbsp;</td>
-      </tr>
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer2', 'show');" onmouseout ="ddd('Layer2', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/38.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">流星剑
-		  <div style="DISPLAY: none" id="Layer2" onMouseOver ="ddd('Layer2', 'show');" 
-            onMouseOut="ddd('Layer2', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【流星剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*悦来客栈出售<br 
-                  >
-&nbsp;&nbsp;<span class="STYLE5">999两</span></td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑40</td>
-        <td align="center" class="STYLE3">攻击+10<br 
-            >
-轻功+10</td>
-        <td align="left" class="STYLE3">LV.1：攻击时50%几率追加10点冰封效果
-          <br 
-            >LV.6（MAX）：攻击时必定追加10点冰封效果</td>
-      </tr>
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer3', 'show');" onmouseout ="ddd('Layer3', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/39.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">白龙剑
-		  <div style="DISPLAY: none" id="Layer3" onMouseOver ="ddd('Layer3', 'show');" 
-            onMouseOut="ddd('Layer3', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【白龙剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*冯铁匠出售<br 
-                  >
-&nbsp;&nbsp;<span class="STYLE5">500两</span></td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑50</td>
-        <td align="center" class="STYLE3">攻击+20</td>
-        <td align="left" class="STYLE4">苗家剑法威力+100</td>
-      </tr>
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer4', 'show');" onmouseout ="ddd('Layer4', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/40.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">金蛇剑
-		  <div style="DISPLAY: none" id="Layer4" onMouseOver ="ddd('Layer4', 'show');" 
-            onMouseOut="ddd('Layer4', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【金蛇剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*碧血剑剧情<br 
-                  >
-&nbsp;&nbsp;<span class="STYLE5">*邪线需偷袁承志</span></td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑50</td>
-        <td align="center" class="STYLE3">攻击+20<br 
-            >
-轻功+10</td>
-        <td class="STYLE4" >金蛇剑法威力+200</td>
-      </tr>
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer5', 'show');" onmouseout ="ddd('Layer5', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/41.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3"><span class="STYLE3">凝碧剑</span>
-          <div style="DISPLAY: none" id="Layer5" onMouseOver ="ddd('Layer5', 'show');" 
-            onMouseOut="ddd('Layer5', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【凝碧剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*书剑邪线收张召重<br 
-                  >&nbsp;&nbsp;*书剑正线偷张召重</td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑60</td>
-        <td align="center" class="STYLE3">攻击+30</td>
-         <td align="left" class="STYLE3">&nbsp;</td>
-      </tr>      
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer10', 'show');" onmouseout ="ddd('Layer10', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/279.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3"><span class="STYLE3">君子剑</span>
-          <div style="DISPLAY: none" id="Layer10" onMouseOver ="ddd('Layer10', 'show');" 
-            onMouseOut="ddd('Layer10', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【君子剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*绝情谷房间武器架上</td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑70</td>
-        <td align="center" class="STYLE3">攻击+40</td>
-        <td align="left" class="STYLE4"><p>全真剑法威力+100</p></td>
-      </tr>
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer11', 'show');" onmouseout ="ddd('Layer11', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/280.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3"><span class="STYLE3">淑女剑</span>
-          <div style="DISPLAY: none" id="Layer11" onMouseOver ="ddd('Layer11', 'show');" 
-            onMouseOut="ddd('Layer11', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【淑女剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*绝情谷房间武器架上</td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑70</td>
-        <td align="center" class="STYLE3">攻击+40</td>
-        <td align="left" class="STYLE4"><p>玉女剑法威力+100</p>
-          </td>
-      </tr>
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer6', 'show');" onmouseout ="ddd('Layer6', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/36.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">玄铁剑
-          <div style="DISPLAY: none" id="Layer6" onMouseOver ="ddd('Layer6', 'show');" 
-            onMouseOut="ddd('Layer6', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【玄铁剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*独孤剑冢拔剑<br 
-                  >
-&nbsp;&nbsp;<span class="STYLE5">攻击需≥100</span></td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑100<br 
-            >
-          内力≥1000</td>
-        <td align="center" class="STYLE3">攻击+30<br 
-            >
-防御+30<br >
-轻功-10</td>
-        <td align="left" class="STYLE4">玄铁剑法威力+200<br 
-            >
-          <span class="STYLE3">LV.1：使用玄铁剑法时，增加50%暴击率
-          <br 
-            >LV.6（MAX）：使用玄铁剑法时，必定暴击，并可发动<strong>“破尽天下”<br 
-            >
-          玄铁重击：</strong>当被攻击者达到封穴50、流血值100时，对其造成（2倍内伤+200点）真实伤害，对方流血值减100</span></td>
-      </tr>
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer7', 'show');" onmouseout ="ddd('Layer7', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/236.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">真武剑
-		  <div style="DISPLAY: none" id="Layer7" onMouseOver ="ddd('Layer7', 'show');" 
-            onMouseOut="ddd('Layer7', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【真武剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*武当山宝箱（需95道德）<br 
-                  >&nbsp;&nbsp;*黑木崖宝箱</td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑100<br 
-            >
-          内力≥500</td>
-        <td align="center" class="STYLE3">攻击+50</td>
-        <td align="left" class="STYLE3"><span class="STYLE4">太极剑法威力+100</span><br 
-            >使用太极剑法时，必定连击</td>
-      </tr>
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer8', 'show');" onmouseout ="ddd('Layer8', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/37.jpg" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">倚天剑
-		  <div style="DISPLAY: none" id="Layer8" onMouseOver ="ddd('Layer8', 'show');" 
-            onMouseOut="ddd('Layer8', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【倚天剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*倚天正线龙门客栈收赵敏<br 
-                  >
-&nbsp;&nbsp;*倚天邪线修复断裂的倚天剑</td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑100<br 
-            >
-          内力≥500</td>
-        <td align="center" class="STYLE3">攻击+50</td>
-        <td align="left" class="STYLE3"><span class="STYLE4">倚天剑法威力+100</span><br 
-            >
-          LV.1：攻击时70%几率造成流血效果
-          <br 
-            >
-          LV.6（MAX）：攻击时必定造成流血效果，并追加15点灼烧</td>
-      </tr>     
+  <table width="860" border="0">
+
     <tr>
-        <td align="center"><A onmouseover="ddd('Layer9', 'show');" onmouseout ="ddd('Layer9', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/55.png" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">神山剑
-		  <div style="DISPLAY: none" id="Layer9" onMouseOver ="ddd('Layer9', 'show');" 
-            onMouseOut="ddd('Layer9', 'hide');">
-		    <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【神山剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*小村选择洗神山剑法后获得</td>
-              </tr>
-            </table>
-        </div></td>
-        <td align="center" class="STYLE3">御剑140</td>
-        <td align="center" class="STYLE3">攻击+70</td>
-        <td align="left" class="STYLE3"><span class="STYLE4">神山剑法威力+100</span><br 
-        ></td>
-      </tr>     
-      <tr>
-        <td align="center"><A onmouseover="ddd('Layer13', 'show');" onmouseout ="ddd('Layer13', 'hide');" href="javascript:;" ><IMG border=0 alt="" src="../../images/thing/346.png" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">赤剑
-		  <div style="DISPLAY: none" id="Layer13" onMouseOver ="ddd('Layer13', 'show');" 
-            onMouseOut="ddd('Layer13', 'hide');">
-            <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【赤剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*华英雄通关，战胜剑魔剑仙得<br 
-                  >
-&nbsp;&nbsp;<span class="STYLE5">*星河海里面的石狮子</span></td>
-              </tr>
-              <tr>
-                <td align="left" class="s6"></td>
-              </tr>
-            </table>
-          </div></td>
-        <td align="center" class="STYLE3">御剑350</td>
-        <td align="center" class="STYLE3">攻击+50<br 
-            >
-轻功+10</td>
-        <td class="STYLE4" >剑法攻击附带当前生命值4%伤害</td>
-      </tr>
-<tr>
-        <td align="center"><A onmouseover="ddd('Layer14', 'show');" onmouseout ="ddd('Layer14', 'hide');" href="javascript:;" ><IMG border=0 src="../../images/01/55.png" width=60 height=60 ></A></td>
-        <td align="center" class="STYLE3">英雄剑
-		  <div style="DISPLAY: none" id="Layer14" onMouseOver ="ddd('Layer14', 'show');" 
-            onMouseOut="ddd('Layer14', 'hide');">
-		    <table width="95%" border="0">
-              <tr>
-                <td height="20" align="left" class="STYLE4" valign="bottom">【英雄剑】</td>
-              </tr>            
-              <tr>
-                <td align="left" class="s6">&nbsp;&nbsp;*小村挑战无名</td>
-              </tr>
-            </table>
-        </div></td>
-        <td align="center" class="STYLE3">御剑320</td>
-        <td align="center" class="STYLE3">攻击+50</td>
-        <td align="left" class="STYLE3"><span class="STYLE4">攻防均以御剑系数计算</span><br 
-        ></td>
-      </tr>     
-          </table></td>
-  </tr>
-</table>
+      <td height="100%">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#cccccc">
+          <tr>
+            <td height="19" colspan="2" align="center" bgcolor="#ffffcc"><span class="STYLE3">名称</span></td>
+            <td width="89" align="center" bgcolor="#ffffcc"><span class="STYLE3">装备需求</span></td>
+            <td width="121" align="center" bgcolor="#ffffcc"><span class="STYLE3">加成</span></td>
+            <td width="485" align="center" bgcolor="#ffffcc"><span class="STYLE3">特效</span></td>
+          </tr>
+          <tr>
+            <td width="60" align="center"><A onmouseover="ddd('Layer1', 'show');" onmouseout="ddd('Layer1', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/42.jpg" width=60 height=60></A></td>
+            <td width="77" align="center" class="STYLE3">白虹剑
+              <div style="DISPLAY: none" id="Layer1" onMouseOver="ddd('Layer1', 'show');"
+                onMouseOut="ddd('Layer1', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【白虹剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*冯铁匠出售<br>
+                      &nbsp;&nbsp;<span class="STYLE5">300两</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑30</td>
+            <td align="center" class="STYLE3">攻击+10</td>
+            <td align="center" class="STYLE3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer2', 'show');" onmouseout="ddd('Layer2', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/38.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3">流星剑
+              <div style="DISPLAY: none" id="Layer2" onMouseOver="ddd('Layer2', 'show');"
+                onMouseOut="ddd('Layer2', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【流星剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*悦来客栈出售<br>
+                      &nbsp;&nbsp;<span class="STYLE5">999两</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑40</td>
+            <td align="center" class="STYLE3">攻击+10<br>
+              轻功+10</td>
+            <td align="left" class="STYLE3">LV.1：攻击时50%几率追加10点冰封效果
+              <br>LV.6（MAX）：攻击时必定追加10点冰封效果
+            </td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer3', 'show');" onmouseout="ddd('Layer3', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/39.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3">白龙剑
+              <div style="DISPLAY: none" id="Layer3" onMouseOver="ddd('Layer3', 'show');"
+                onMouseOut="ddd('Layer3', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【白龙剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*冯铁匠出售<br>
+                      &nbsp;&nbsp;<span class="STYLE5">500两</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑50</td>
+            <td align="center" class="STYLE3">攻击+20</td>
+            <td align="left" class="STYLE4">苗家剑法威力+100</td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer4', 'show');" onmouseout="ddd('Layer4', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/40.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3">金蛇剑
+              <div style="DISPLAY: none" id="Layer4" onMouseOver="ddd('Layer4', 'show');"
+                onMouseOut="ddd('Layer4', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【金蛇剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*碧血剑剧情<br>
+                      &nbsp;&nbsp;<span class="STYLE5">*邪线需偷袁承志</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑50</td>
+            <td align="center" class="STYLE3">攻击+20<br>
+              轻功+10</td>
+            <td class="STYLE4">金蛇剑法威力+200</td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer5', 'show');" onmouseout="ddd('Layer5', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/41.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3"><span class="STYLE3">凝碧剑</span>
+              <div style="DISPLAY: none" id="Layer5" onMouseOver="ddd('Layer5', 'show');"
+                onMouseOut="ddd('Layer5', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【凝碧剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*书剑邪线收张召重<br>&nbsp;&nbsp;*书剑正线偷张召重</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑60</td>
+            <td align="center" class="STYLE3">攻击+30</td>
+            <td align="left" class="STYLE3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer10', 'show');" onmouseout="ddd('Layer10', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/279.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3"><span class="STYLE3">君子剑</span>
+              <div style="DISPLAY: none" id="Layer10" onMouseOver="ddd('Layer10', 'show');"
+                onMouseOut="ddd('Layer10', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【君子剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*绝情谷房间武器架上</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑70</td>
+            <td align="center" class="STYLE3">攻击+40</td>
+            <td align="left" class="STYLE4">全真剑法威力+100&nbsp;&nbsp;&nbsp; <br />
+              <a href="javascript:;" onMouseOver="ddd('Layer6jz', 'show');"
+                onMouseOut="ddd('Layer6jz', 'hide');">【关关雎鸠.在河之洲】</a>
+              <div style="display:none;" id="Layer6jz" onMouseOver="ddd('Layer6jz', 'show');"
+                onMouseOut="ddd('Layer6jz', 'hide');">
+                <table width="95%" height="200" border="0">
+                  <tr>
+                    <td height="20" colspan="2" class="STYLE7"></td>
+                  </tr>
+                  <tr>
+                    <td height="25" colspan="2" class="STYLE7">&nbsp;&nbsp;&nbsp;【关关雎鸠.在河之洲】、【窈窕淑女.君子好逑】<br />
+                      &nbsp;&nbsp;&nbsp;【谦谦君子.温润如玉】：</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td height="25" class="s5">装备君子剑使用<strong>全真剑法、玉女素心剑</strong>攻击几率触发</td>
+                  </tr>
+                  <tr>
+                    <td width="20">&nbsp;</td>
+                    <td width="320" height="25" class="STYLE4"><strong>限主角</strong></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td height="25" class="STYLE3">必定造成流血且追加气攻</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td height="25" class="STYLE4">追加气攻可成长-最高1000气攻<span class="s5">(与天书数量有关)</span></td>
+                  </tr>
+                  <tr>
+                    <td width="24">&nbsp;</td>
+                    <td width="316" height="25" class="STYLE4">-</td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer11', 'show');" onmouseout="ddd('Layer11', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/280.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3"><span class="STYLE3">淑女剑</span>
+              <div style="DISPLAY: none" id="Layer11" onMouseOver="ddd('Layer11', 'show');"
+                onMouseOut="ddd('Layer11', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【淑女剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*绝情谷房间武器架上</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑70</td>
+            <td align="center" class="STYLE3">攻击+40</td>
+            <td align="left" class="STYLE4">玉女剑法威力+100 &nbsp;&nbsp;&nbsp;<br />
+              <a href="javascript:;" onMouseOver="ddd('Layer6sn', 'show');"
+                onMouseOut="ddd('Layer6sn', 'hide');">【蒹葭苍苍.白露为霜】</a>
+              <div style="display:none;" id="Layer6sn" onMouseOver="ddd('Layer6sn', 'show');"
+                onMouseOut="ddd('Layer6sn', 'hide');">
+                <table width="95%" height="200" border="0">
+                  <tr>
+                    <td height="20" colspan="2" class="STYLE7"></td>
+                  </tr>
+                  <tr>
+                    <td height="25" colspan="2" class="STYLE7">&nbsp;&nbsp;&nbsp;【所谓伊人.在水一方】、【蒹葭苍苍.白露为霜】：</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td height="25" class="s5">装备淑女剑使用<strong>玉女剑法、玉女素心剑</strong>攻击几率触发</td>
+                  </tr>
+                  <tr>
+                    <td width="20">&nbsp;</td>
+                    <td width="320" height="25" class="STYLE4"><strong>限主角</strong></td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td height="25" class="STYLE3">必定造成冰封且追加气攻</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td height="25" class="STYLE4">追加气攻可成长-最高1000气攻<span class="s5">(与天书数量有关)</span></td>
+                  </tr>
+                  <tr>
+                    <td width="24">&nbsp;</td>
+                    <td width="316" height="25" class="STYLE4">-</td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer6', 'show');" onmouseout="ddd('Layer6', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/36.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3">玄铁剑
+              <div style="DISPLAY: none" id="Layer6" onMouseOver="ddd('Layer6', 'show');"
+                onMouseOut="ddd('Layer6', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【玄铁剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*独孤剑冢拔剑<br>
+                      &nbsp;&nbsp;<span class="STYLE5">攻击需≥100</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑100<br>
+              内力≥1000</td>
+            <td align="center" class="STYLE3">攻击+30<br>
+              防御+30<br>
+              轻功-10</td>
+            <td align="left" class="STYLE4">玄铁剑法威力+200<br>
+              <span class="STYLE3">LV.1：使用玄铁剑法时，增加10%暴击率
+                <br>LV.6（MAX）：使用玄铁剑法时，增加60%暴击率
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer7', 'show');" onmouseout="ddd('Layer7', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/236.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3">真武剑
+              <div style="DISPLAY: none" id="Layer7" onMouseOver="ddd('Layer7', 'show');"
+                onMouseOut="ddd('Layer7', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【真武剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*武当山宝箱（需95道德）<br>&nbsp;&nbsp;*黑木崖宝箱</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑100<br>
+              内力≥500</td>
+            <td align="center" class="STYLE3">攻击+50</td>
+            <td align="left" class="STYLE3"><span class="STYLE4">太极剑法威力+100</span><br>使用太极剑法时，必定连击</td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer8', 'show');" onmouseout="ddd('Layer8', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/37.jpg" width=60 height=60></A></td>
+            <td align="center" class="STYLE3">倚天剑
+              <div style="DISPLAY: none" id="Layer8" onMouseOver="ddd('Layer8', 'show');"
+                onMouseOut="ddd('Layer8', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【倚天剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*倚天正线龙门客栈收赵敏<br>
+                      &nbsp;&nbsp;*倚天邪线修复断裂的倚天剑</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑100<br>
+              内力≥500</td>
+            <td align="center" class="STYLE3">攻击+50</td>
+            <td align="left" class="STYLE3"><span class="STYLE4">倚天剑法威力+100</span><br>
+              LV.1：攻击时10%几率造成流血效果
+              <br>
+              LV.6（MAX）：攻击时60%几率造成流血效果
+            </td>
+          </tr>
+          <tr>
+            <td align="center"><A onmouseover="ddd('Layer9', 'show');" onmouseout="ddd('Layer9', 'hide');"
+                href="javascript:;"><IMG border=0 src="../../images/01/55.png" width=60 height=60></A></td>
+            <td align="center" class="STYLE3">神山剑
+              <div style="DISPLAY: none" id="Layer9" onMouseOver="ddd('Layer9', 'show');"
+                onMouseOut="ddd('Layer9', 'hide');">
+                <table width="95%" border="0">
+                  <tr>
+                    <td height="20" align="left" class="STYLE4" valign="bottom">【神山剑】</td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="s6">&nbsp;&nbsp;*小村选择洗神山剑法后获得</td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td align="center" class="STYLE3">御剑140</td>
+            <td align="center" class="STYLE3">攻击+70</td>
+            <td align="left" class="STYLE3"><span class="STYLE4">神山剑法威力+100</span><br></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>

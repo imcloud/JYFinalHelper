@@ -1,224 +1,265 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>无标题文档</title>
-<style type="text/css">
-@import url("../../sw.css");
-<!--
-body {
-	overflow-x:hidden;
-	background-image: url(../../images/body_bg.jpg);
-}
-.s5 {
-	color: #060;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.s6 {
-	color: #060;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE3 {
-	font-size: 14px;
-	color: #000000;
-	font-weight: normal;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE9 {
-	color: #999999;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-}
-.STYLE10 {font-size: 14px; color: #CC0000; font-weight: normal; font-family: Arial, Helvetica, sans-serif; }
-.STYLE11 {
-	color: #006600;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-}
-.STYLE12 {font-size: 14px; color: #FF0000; font-weight: normal; font-family: Arial, Helvetica, sans-serif; }
-.STYLE13 {
-	color: #0000FF;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-}
-.STYLE14 {
-	color: #0066FF;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-}
-.STYLE15 {font-size: 14px; color: #FF0000; font-weight: bold; font-family: Arial, Helvetica, sans-serif; }
-.STYLE16 {	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
--->
-</style>
-<script type="text/javascript" src="../../iframe.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <title>无标题文档</title>
+  <style type="text/css">
+    <!--
+    @import url("../../sw.css");
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+    body {
+      overflow-x: hidden;
+      background-image: url(../../images/body_bg.jpg);
+    }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
-<script> 
-function ddd(obj, sType) { 
-var oDiv = document.getElementById(obj); 
-if (sType == 'show') { oDiv.style.display = 'block';} 
-if (sType == 'hide') { oDiv.style.display = 'none';} 
-} 
-</script> 
+    .s5 {
+      color: #060;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .s6 {
+      color: #060;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE3 {
+      font-size: 14px;
+      color: #000000;
+      font-weight: normal;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE9 {
+      color: #999999;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .STYLE10 {
+      font-size: 14px;
+      color: #CC0000;
+      font-weight: normal;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE11 {
+      color: #006600;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .STYLE12 {
+      font-size: 14px;
+      color: #FF0000;
+      font-weight: normal;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE13 {
+      color: #0000FF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .STYLE14 {
+      color: #0066FF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .STYLE15 {
+      font-size: 14px;
+      color: #FF0000;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE16 {
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    -->
+  </style>
+  <script type="text/javascript" src="../../iframe.js"></script>
+  <script type="text/javascript">
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d = document; if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+      }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+    }
+  </script>
+  <script>
+    function ddd(obj, sType) {
+      var oDiv = document.getElementById(obj);
+      if (sType == 'show') { oDiv.style.display = 'block'; }
+      if (sType == 'hide') { oDiv.style.display = 'none'; }
+    }
+  </script>
 </head>
 
 <body onLoad="MM_preloadImages('../../images/dh/qin.jpg','../../images/dh/shi.jpg')">
 
-<table width="860" border="0">
+  <table width="860" border="0">
 
-  <tr>
-    <td><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC">
-      <tr>
-        <td height="19" colspan="2" align="center" bgcolor="#FFFFCC"><span class="STYLE3">名称</span></td>
-        <td width="117" align="center" bgcolor="#FFFFCC"><span class="STYLE3">效果</span></td>
-        <td width="237" align="center" bgcolor="#FFFFCC" class="STYLE3"><span class="STYLE3">额外特效</span></td>
-        <td width="325" align="center" bgcolor="#FFFFCC" class="STYLE3">获得方法</td>
-        </tr>
-      <tr>
-        <td width="60" align="center"><img src="../../images/01/0.jpg" width="60" height="60" border="0" /></td>
-        <td width="93" align="center" class="STYLE3">小还丹</td>
-        <td align="center" class="STYLE12">生命+80</td>
-        <td align="center" class="STYLE10">同时恢复部分内伤<span class="STYLE11">(会降低治疗量)</span></td>
-        <td align="left" class="s6">《千金方》<span class="STYLE16"> 消耗药材2 </span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/1.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">天香续命膏</td>
-        <td align="center" class="STYLE12">生命+300</td>
-        <td align="center" class="STYLE10"><strong>流血-20</strong><br />
-          同时恢复部分内伤<span class="STYLE11">(会降低治疗量)<br />
-        </span></td>
-        <td align="left" class="s6">《黄帝内经》<span class="STYLE16"> 消耗药材8 </span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/2.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">黑玉断续膏</td>
-        <td align="center" class="STYLE12">生命+500</td>
-        <td align="center" class="STYLE10">同时恢复部分内伤<span class="STYLE11">(会降低治疗量)</span></td>
-        <td align="left" class="s6">《胡青牛医书》<span class="STYLE16"> 消耗药材15<br /> 
-        &nbsp;小村药炉消耗药材15 </span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/7.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3"><a name="neili" id="neili"></a>无常丹</td>
-        <td align="center" class="STYLE3"><span class="STYLE12">生命+300</span><br />
-<span class="STYLE13">内力+800</span></td>
-        <td align="center" class="STYLE3"><span class="STYLE10">同时恢复部分内伤</span><span class="STYLE10"><span class="STYLE11">(会降低治疗量)</span></span></td>
-        <td align="left" class="s6"><span class="STYLE16">《华佗内昭图》 消耗药材12 </span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/8.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">天王保命丹</td>
-        <td align="center" class="STYLE3">体力+50<br />
-<span class="s6">中毒-25</span><br />
-<span class="STYLE12">生命+500</span><br />
-<span class="STYLE13">内力+1200</span></td>
-        <td align="center" class="STYLE3"><span class="STYLE10">同时恢复部分内伤</span><span class="STYLE10"><span class="STYLE11">(会降低治疗量)</span></span></td>
-        <td align="left" class="s6">-</td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/3.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">白云熊胆丸</td>
-        <td align="center" class="STYLE13">内力+666</td>
-        <td align="center" class="STYLE3">&nbsp;</td>
-        <td align="left" class="s6">《千金方》<span class="STYLE16"> 消耗药材3</span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/4.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">田七鲨胆散</td>
-        <td align="center" class="STYLE13">内力+888</td>
-        <td align="center" class="STYLE14">冰封-30</td>
-        <td align="left" class="s6">《黄帝内经》<span class="STYLE16"> 消耗药材8 </span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/5.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">九花玉露丸</td>
-        <td align="center" class="STYLE3"><span class="STYLE13">内力+999</span><br />
-<span class="s6">中毒-20</span></td>
-        <td align="center" class="STYLE15">灼烧-20</td>
-        <td align="left" class="s6"><span class="STYLE16">《华佗内昭图》 消耗药材13 </span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/6.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">九转熊蛇丸<a name="tili" id="tili"></a></td>
-        <td align="center" class="STYLE13">内力+3000</td>
-        <td align="center" class="STYLE3">&nbsp;</td>
-        <td align="left" class="s6"><span class="STYLE16">《子午针灸经》 消耗药材15 </span><br />&nbsp;小村药炉消耗药材15 </td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/12.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">精气丸<a name="jiedu" id="jiedu"></a></td>
-        <td align="center" class="STYLE3">体力+40</td>
-        <td align="center" class="STYLE3">&nbsp;</td>
-        <td align="left" class="s6">-</td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/13.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">玉灵散</td>
-        <td align="center" class="STYLE3">体力+66</td>
-        <td align="center" class="STYLE3">&nbsp;</td>
-        <td align="left" class="s6">-</td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/9.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">黄连解毒丸</td>
-        <td align="center" class="STYLE11">中毒-10</td>
-        <td align="center" class="STYLE3">&nbsp;</td>
-        <td align="left" class="s6"><span class="STYLE16">《药王神篇》 消耗药材5 </span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/10.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">牛黄血蝎丹</td>
-        <td align="center" class="s6">中毒-25</td>
-        <td align="center" class="STYLE3">&nbsp;</td>
-        <td align="left" class="s6"><span class="STYLE16">《药王神篇》 </span><span class="STYLE16">消耗药材8 </span></td>
-        </tr>
-      <tr>
-        <td align="center"><img src="../../images/01/11.jpg" width="60" height="60" border="0" /></td>
-        <td align="center" class="STYLE3">六阳正气丹</td>
-        <td align="center" class="s6">中毒-40</td>
-        <td align="center" class="STYLE3">&nbsp;</td>
-        <td align="left" class="s6"><span class="STYLE16">《药王神篇》 消耗药材12 </span></td>
-        </tr>
-      
-      
+    <tr>
+      <td>
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC">
+          <tr>
+            <td height="19" colspan="2" align="center" bgcolor="#FFFFCC"><span class="STYLE3">名称</span></td>
+            <td width="117" align="center" bgcolor="#FFFFCC"><span class="STYLE3">效果</span></td>
+            <td width="237" align="center" bgcolor="#FFFFCC" class="STYLE3"><span class="STYLE3">额外特效</span></td>
+            <td width="325" align="center" bgcolor="#FFFFCC" class="STYLE3">获得方法</td>
+          </tr>
+          <tr>
+            <td width="60" align="center"><img src="../../images/01/0.jpg" width="60" height="60" border="0" /></td>
+            <td width="93" align="center" class="STYLE3">小还丹</td>
+            <td align="center" class="STYLE12">生命+80</td>
+            <td align="center" class="STYLE10">同时恢复部分内伤<span class="STYLE11">(会降低治疗量)</span></td>
+            <td align="left" class="s6">《千金方》<span class="STYLE16"> 消耗药材2 </span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/1.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">天香续命膏</td>
+            <td align="center" class="STYLE12">生命+300</td>
+            <td align="center" class="STYLE10"><strong>流血-20</strong><br />
+              同时恢复部分内伤<span class="STYLE11">(会降低治疗量)<br />
+              </span></td>
+            <td align="left" class="s6">《黄帝内经》<span class="STYLE16"> 消耗药材8 </span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/2.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">黑玉断续膏</td>
+            <td align="center" class="STYLE12">生命+500</td>
+            <td align="center" class="STYLE10">同时恢复部分内伤<span class="STYLE11">(会降低治疗量)</span></td>
+            <td align="left" class="s6">《胡青牛医书》<span class="STYLE16"> 消耗药材15<br />
+                &nbsp;小村药炉消耗药材15 </span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/7.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3"><a name="neili" id="neili"></a>无常丹</td>
+            <td align="center" class="STYLE3"><span class="STYLE12">生命+300</span><br />
+              <span class="STYLE13">内力+800</span>
+            </td>
+            <td align="center" class="STYLE3"><span class="STYLE10">同时恢复部分内伤</span><span class="STYLE10"><span
+                  class="STYLE11">(会降低治疗量)</span></span></td>
+            <td align="left" class="s6"><span class="STYLE16">《华佗内昭图》 消耗药材12 </span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/8.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">天王保命丹</td>
+            <td align="center" class="STYLE3">体力+50<br />
+              <span class="s6">中毒-25</span><br />
+              <span class="STYLE12">生命+500</span><br />
+              <span class="STYLE13">内力+1200</span>
+            </td>
+            <td align="center" class="STYLE3"><span class="STYLE10">同时恢复部分内伤</span><span class="STYLE10"><span
+                  class="STYLE11">(会降低治疗量)</span></span></td>
+            <td align="left" class="s6">-</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/3.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">白云熊胆丸</td>
+            <td align="center" class="STYLE13">内力+666</td>
+            <td align="center" class="STYLE3">&nbsp;</td>
+            <td align="left" class="s6">《千金方》<span class="STYLE16"> 消耗药材3</span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/4.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">田七鲨胆散</td>
+            <td align="center" class="STYLE13">内力+888</td>
+            <td align="center" class="STYLE14">冰封-30</td>
+            <td align="left" class="s6">《黄帝内经》<span class="STYLE16"> 消耗药材8 </span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/5.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">九花玉露丸</td>
+            <td align="center" class="STYLE3"><span class="STYLE13">内力+999</span><br />
+              <span class="s6">中毒-20</span>
+            </td>
+            <td align="center" class="STYLE15">灼烧-20</td>
+            <td align="left" class="s6"><span class="STYLE16">《华佗内昭图》 消耗药材13 </span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/6.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">九转熊蛇丸<a name="tili" id="tili"></a></td>
+            <td align="center" class="STYLE13">内力+3000</td>
+            <td align="center" class="STYLE3">&nbsp;</td>
+            <td align="left" class="s6"><span class="STYLE16">《子午针灸经》 消耗药材15 </span><br />&nbsp;小村药炉消耗药材15 </td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/12.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">精气丸<a name="jiedu" id="jiedu"></a></td>
+            <td align="center" class="STYLE3">体力+40</td>
+            <td align="center" class="STYLE3">&nbsp;</td>
+            <td align="left" class="s6">-</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/13.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">玉灵散</td>
+            <td align="center" class="STYLE3">体力+66</td>
+            <td align="center" class="STYLE3">&nbsp;</td>
+            <td align="left" class="s6">-</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/9.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">黄连解毒丸</td>
+            <td align="center" class="STYLE11">中毒-10</td>
+            <td align="center" class="STYLE3">&nbsp;</td>
+            <td align="left" class="s6"><span class="STYLE16">《药王神篇》 消耗药材5 </span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/10.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">牛黄血蝎丹</td>
+            <td align="center" class="s6">中毒-25</td>
+            <td align="center" class="STYLE3">&nbsp;</td>
+            <td align="left" class="s6"><span class="STYLE16">《药王神篇》 </span><span class="STYLE16">消耗药材8 </span></td>
+          </tr>
+          <tr>
+            <td align="center"><img src="../../images/01/11.jpg" width="60" height="60" border="0" /></td>
+            <td align="center" class="STYLE3">六阳正气丹</td>
+            <td align="center" class="s6">中毒-40</td>
+            <td align="center" class="STYLE3">&nbsp;</td>
+            <td align="left" class="s6"><span class="STYLE16">《药王神篇》 消耗药材12 </span></td>
+          </tr>
 
-      
-      
 
-      
-    </table></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-  </tr>
-</table>
+
+
+
+
+
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
 </body>
+
 </html>

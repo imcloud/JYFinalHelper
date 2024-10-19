@@ -1,385 +1,539 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>无标题文档</title>
-<style type="text/css">
-@import url("../../sccg.css");
-<!--
-.STYLE1 {
-	color: #FF0000;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE10 {
-	color: #000000;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE2 {
-	color: #009900;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE4 {
-	color: #FF6600;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE6 {
-	color: #0066FF;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-body {
-	background-image: url(../../images/body_bg.jpg);
-	overflow-x:hidden;
-	overflow-y:auto;
-}
-}
-.STYLE11 {
-	color: #000000;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE12 {
-	color: #006600;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE13 {
-	color: #006600;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE103 {
-	color: #CC0000;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.STYLE104 {
-	color: #003366;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-}
-.STYLE105 {
-	font-size: 16px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-style: normal;
-	font-weight: normal;
-}
-.STYLE107 {color: #FF0000; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
-.STYLE109 {
-	color: #0000FF;
-	font-size: 14px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-}
-.STYLE110 {font-family: Arial, Helvetica, sans-serif; font-size: 14px;}
--->
-</style>
-<script type="text/javascript" src="../../iframe.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <title>无标题文档</title>
+  <style type="text/css">
+    <!--
+    @import url("../../sccg.css");
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+    .STYLE1 {
+      color: #FF0000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
+    .STYLE10 {
+      color: #000000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE2 {
+      color: #009900;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE4 {
+      color: #FF6600;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE6 {
+      color: #0066FF;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-image: url(../../images/body_bg.jpg);
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    }
+
+    .STYLE11 {
+      color: #000000;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE12 {
+      color: #006600;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE13 {
+      color: #006600;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE103 {
+      color: #CC0000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .STYLE104 {
+      color: #003366;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .STYLE105 {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .STYLE107 {
+      color: #FF0000;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    .STYLE109 {
+      color: #0000FF;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+
+    .STYLE110 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+    -->
+  </style>
+  <script type="text/javascript" src="../../iframe.js"></script>
+  <script type="text/javascript">
+    function MM_swapImgRestore() { //v3.0
+      var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d = document; if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+      }
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+        d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+      }
+      if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+      for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+      if (!x && d.getElementById) x = d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+        if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+    }
+  </script>
 </head>
 
 <body onLoad="MM_preloadImages('../../images/dh/jing2.jpg')">
-<table width="863" border="0">
-  <tr>
-    <td width="44"  class="STYLE11 STYLE12">&nbsp;</td>
-    <td  valign="bottom"  class="STYLE13"><span class="STYLE11 STYLE12"><img src="../../images/tianshu/shendiao1.jpg" width="175" height="46" /></span></td>
-    <td align="right" valign="bottom"><table width="400" border="0">
-      <tr>
-        <td width="50" height="25" align="center"><a href="feihuwaizhuan.html" class="STYLE105">飞</a></td>
-        <td width="50" align="center"><a href="xueshanfeihu.html" class="STYLE105">雪</a></td>
-        <td width="50" align="center"><a href="lianchengjue.html" class="STYLE105">连</a></td>
-        <td width="50" align="center"><a href="tianlongbabu.html" class="STYLE105">天</a></td>
-        <td width="50" align="center"><a href="shediaoyingxiongzhuan.html" class="STYLE105">射</a></td>
-        <td width="50" align="center"><a href="baimaxiaoxifeng.html" class="STYLE105">白</a></td>
-        <td width="50" align="center"><a href="ludingji.html" class="STYLE105">鹿</a></td>
-        <td align="center"><span class="STYLE105"></span></td>
-      </tr>
-       <tr>
-        <td height="25" align="center"><a href="xiaoaojianghu.html" class="STYLE105">笑</a></td>
-        <td align="center"><a href="shujianenchoulu.html" class="STYLE105">书</a></td>
-        <td align="center"><span class="STYLE105">神</span></td>
-        <td align="center"><a href="xiakexing.html" class="STYLE105">侠</a></td>
-        <td align="center"><a href="yitiantulongji.html" class="STYLE105">倚</a></td>
-        <td align="center"><a href="bixuejian.html" class="STYLE105">碧</a></td>
-        <td align="center"><a href="yuanyangdao.html" class="STYLE105">鸳</a></td>
-        <td align="center"><span class="STYLE105"></span></td>
-      </tr>
-    </table>      
-    <a href="../../KG02.html" target="KG" onMouseOver="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onMouseOut="MM_swapImgRestore()"></a></td>
-    <td align="center"  class="STYLE13"><a href="../../KG02.html" target="KG" onMouseOver="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="../../images/dh/jing1.jpg" width="60" height="70" id="Image787" border="0" /></a></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">&nbsp;</td>
-    <td colspan="4"><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">序号</td>
-        <td width="400" background="../../images/body_bg1.jpg" class="STYLE10">流程</td>
-        <td width="340" align="center" background="../../images/body_bg1.jpg" class="STYLE10">奖励</td>
-      </tr>
-      <tr>
-        <td height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">一</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11"><span class="STYLE2"><font 
-            color="#000000">古墓</font>（传送代码18）</span></td>
-      </tr>
-      <tr>
-        <td align="center" class="STYLE10">1</td>
-        <td class="STYLE10">与小龙女对话，选<span class="STYLE6">『是』</span>小龙女加入</td>
-        <td valign="top"><table width="100%" border="0">
+  <table width="863" border="0">
+    <tr>
+      <td width="44" class="STYLE11 STYLE12">&nbsp;</td>
+      <td valign="bottom" class="STYLE13"><span class="STYLE11 STYLE12"><img src="../../images/tianshu/shendiao1.jpg"
+            width="175" height="46" /></span></td>
+      <td align="right" valign="bottom">
+        <table width="400" border="0">
           <tr>
-            <td width="65"><img src="../../images/02/59.gif" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6"><span class="STYLE104"><font 
-                  color="#0066ff">小龙女</font></span><span class="STYLE2">[队友] </span><span class="STYLE104"><span 
-              class="STYLE12">加入</span></span></td>
+            <td width="50" height="25" align="center"><a href="feihuwaizhuan.html" class="STYLE105">飞</a></td>
+            <td width="50" align="center"><a href="xueshanfeihu.html" class="STYLE105">雪</a></td>
+            <td width="50" align="center"><a href="lianchengjue.html" class="STYLE105">连</a></td>
+            <td width="50" align="center"><a href="tianlongbabu.html" class="STYLE105">天</a></td>
+            <td width="50" align="center"><a href="shediaoyingxiongzhuan.html" class="STYLE105">射</a></td>
+            <td width="50" align="center"><a href="baimaxiaoxifeng.html" class="STYLE105">白</a></td>
+            <td width="50" align="center"><a href="ludingji.html" class="STYLE105">鹿</a></td>
+            <td align="center"><span class="STYLE105"></span></td>
           </tr>
           <tr>
-            <td><img src="../../images/01/33.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE12" ><span class="STYLE6"><span 
-                  class="STYLE104">玉蜂针</span><span 
-                  class="STYLE2">[暗器]</span></span><span class="STYLE104">*10</span></td>
+            <td height="25" align="center"><a href="xiaoaojianghu.html" class="STYLE105">笑</a></td>
+            <td align="center"><a href="shujianenchoulu.html" class="STYLE105">书</a></td>
+            <td align="center"><span class="STYLE105">神</span></td>
+            <td align="center"><a href="xiakexing.html" class="STYLE105">侠</a></td>
+            <td align="center"><a href="yitiantulongji.html" class="STYLE105">倚</a></td>
+            <td align="center"><a href="bixuejian.html" class="STYLE105">碧</a></td>
+            <td align="center"><a href="yuanyangdao.html" class="STYLE105">鸳</a></td>
+            <td align="center"><span class="STYLE105"></span></td>
+          </tr>
+        </table>
+        <a href="../../KG02.html" target="KG" onMouseOver="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)"
+          onMouseOut="MM_swapImgRestore()"></a>
+      </td>
+      <td align="center" class="STYLE13"><a href="../../KG02.html" target="KG"
+          onMouseOver="MM_swapImage('Image787','','../../images/dh/jing2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img
+            src="../../images/dh/jing1.jpg" width="60" height="70" id="Image787" border="0" /></a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+      <td colspan="4">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" height="18" align="center" background="../../images/body_bg1.jpg" class="STYLE10">序号</td>
+            <td width="400" background="../../images/body_bg1.jpg" class="STYLE10">流程</td>
+            <td width="340" align="center" background="../../images/body_bg1.jpg" class="STYLE10">奖励</td>
           </tr>
           <tr>
-            <td><img src="../../images/01/7.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE12" ><span class="STYLE6"><span 
-                  class="STYLE6">无常丹</span><span 
-                  class="STYLE2">[灵药]*5</span></span></td>
-          </tr>
-           <tr>
-            <td width="65"><img src="../../images/01/277.jpg" width="65" height="65" border="0"/></td>
-            <td class="STYLE6"><span class="STYLE103">金丝手套</span><span class="STYLE2">[武器]</span></td>
-            </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">&nbsp;</td>
-    <td colspan="4"><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">二</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">程英居<span class="STYLE2">（传送代码45）</span></td>
-      </tr>
-      <tr>
-        <td align="center" class="STYLE10">1</td>
-        <td width="400" height="47" valign="middle" class="STYLE10"><p>小龙女在队，进入场景触发战斗：<br />
-          <span class="STYLE1">VS  李莫愁</span></p></td>
-        <td width="340" valign="middle"><table width="100%" border="0">
-          <tr>
-            <td width="65">&nbsp;</td>
-            <td class="STYLE6">&nbsp;</td>
-          </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td height="80" align="center" class="STYLE10">2</td>
-        <td height="47" valign="middle" class="STYLE10"><p>与程英对话，小龙女离开队伍，<span class="STYLE6">程英入队，</span>获得<span class="STYLE4">【玉箫剑法】</span></p>          </td>
-        <td valign="middle"><table width="100%" border="0">
-          <tr>
-            <td width="65"><img src="../../images/01/123.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6"><span class="STYLE1">玉箫剑法</span><span class="STYLE2">[剑法秘籍] </span></td>
+            <td height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">一</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11"><span class="STYLE2">
+                <font color="#000000">古墓</font>（传送代码18）
+              </span></td>
           </tr>
           <tr>
-            <td><img src="../../images/02/63.png" width="65" height="65" /></td>
-            <td height="50" class="STYLE6">程英<span class="STYLE2">[队友]</span> <span class="STYLE12">加入</span></td>
+            <td align="center" class="STYLE10">1</td>
+            <td class="STYLE10">与小龙女对话，选<span class="STYLE6">『是』</span>小龙女加入</td>
+            <td valign="top">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/02/59.gif" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE104">
+                      <font color="#0066ff">小龙女</font>
+                    </span><span class="STYLE2">[队友] </span><span class="STYLE104"><span
+                        class="STYLE12">加入</span></span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/33.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE12"><span class="STYLE6"><span class="STYLE104">玉蜂针</span><span
+                        class="STYLE2">[暗器]</span></span><span class="STYLE104">*10</span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/7.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE12"><span class="STYLE6"><span class="STYLE6">无常丹</span><span
+                        class="STYLE2">[灵药]*5</span></span></td>
+                </tr>
+                <tr>
+                  <td width="65"><img src="../../images/01/277.jpg" width="65" height="65" border="0" /></td>
+                  <td class="STYLE6"><span class="STYLE103">金丝手套</span><span class="STYLE2">[武器]</span></td>
+                </tr>
+              </table>
+            </td>
           </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td height="80" align="center" class="STYLE10">支线</td>
-        <td height="47" valign="middle" class="STYLE10"><p>身上有<span class="STYLE4">【落英神剑掌】</span>秘籍、或者<span class="STYLE6">梅超风</span>在队伍，与冯铁匠对话，可收其去小村<br />在小村可以向冯铁匠购买一些装备或强化装备</p></td>
-        <td valign="middle"><table width="100%" border="0">
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+      <td colspan="4">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
           <tr>
-            <td width="65"><img src="../../images/01/53.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6"><span class="STYLE103">判官笔</span><span class="STYLE2">[武器]</span> 300两</td>
-          </tr>
-          <tr>
-            <td><img src="../../images/01/42.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6" ><span class="STYLE103">白虹剑</span><span class="STYLE2">[武器] </span>300两</td>
-          </tr>
-          <tr>
-            <td><img src="../../images/01/62.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6" ><span class="STYLE103">佛心甲</span><span class="STYLE2">[防具]</span> 400两</td>
-          </tr>
-          <tr>
-            <td><img src="../../images/01/46.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6" ><span class="STYLE103">绿波香露刀</span><span class="STYLE2">[武器] </span>400两</td>
-          </tr>
-          <tr>
-            <td><img src="../../images/01/39.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6" ><span class="STYLE103">白龙剑</span><span class="STYLE2">[武器] </span>500两</td>
-          </tr>
-          <tr>
-            <td><img src="../../images/01/45.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6" ><span class="STYLE103">冷月宝刀</span><span class="STYLE2">[武器] </span>500两</td>
-          </tr>
-          <tr>
-            <td><img src="../../images/01/50.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6" ><span class="STYLE103">伏魔杵</span><span class="STYLE2">[武器] </span>600两</td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">&nbsp;</td>
-    <td colspan="4"><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">三</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11"><span class="STYLE2"><font 
-            color="#000000">绝情谷</font>（传送代码22）在射雕英雄传桃花岛剧情后开启</span></td>
-      </tr>
-      <tr>
-        <td align="center" class="STYLE10">1</td>
-        <td width="400" class="STYLE10">
-          <p><span class="STYLE2"><font color="#000000">进入大厅触发</font></span><span class="STYLE110"><font color="#000000">剧情，剧情</font></span><span class="STYLE2"><font color="#000000">后，主角被关起来<br />
-            调查房间里的兵器架</font></span><span class="STYLE110"><font color="#000000">，</font></span><span class="STYLE2"><font color="#000000">获得</font></span><span class="STYLE103">[君子剑]</span><span class="STYLE2">、</span><span class="STYLE103">[淑女剑]</span></p>
-          <p><span class="STYLE2"><font 
-            color="#000000">调查房间大门，触发剧情</font></span></p>
-          <p>剧情后进入大厅，触发战斗：</p>
-          <p class="STYLE1">VS 公孙止+绝情谷众</p>
-          <p class="STYLE1"><span class="STYLE10">胜后获得</span><span class="STYLE4">【阴阳倒乱刃】</span></p>
-          <p><span class="STYLE2">公孙止天赋：每阵亡一个队友，集气速度增加2点</span></p></td>
-        <td width="340" valign="top"><table width="100%" border="0">
-          
-          <tr>
-            <td width="65"><img src="../../images/01/279.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6"><span class="STYLE2"><font color="#ff0000" class="STYLE103">君子剑</font>[武器] 
-                调查武器架获得</span></td>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">二</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">程英居<span
+                class="STYLE2">（传送代码45）</span></td>
           </tr>
           <tr>
-            <td><img src="../../images/01/280.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE12" ><span class="STYLE6"><span 
-                  class="STYLE103">淑女剑</span><span class="STYLE2">[武器] 
-                调查武器架获得</span></span></td>
+            <td height="80" align="center" class="STYLE10">1</td>
+            <td width="400" height="47" valign="middle" class="STYLE10">
+              <p>小龙女在队伍的情况下，进入场景触发战斗：<br />
+                <br />
+                <span class="STYLE12"><strong><img src="../../images/hun/dao3.gif" width="26"
+                      height="24" /></strong>vs</span><span class="STYLE107"> 李莫愁</span><br />
+                <span class="STYLE2">战斗难度:★★☆</span><br />
+                <span class="STYLE115">*李莫愁排序轻功约为265</span><br />
+                <br />
+                胜后，获得<span class="STYLE4">【五毒神掌】</span><br />
+                <br />
+              </p>
+            </td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/110.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE1">五毒神掌</span><span class="STYLE2">[拳掌秘笈]</span></td>
+                </tr>
+              </table>
+            </td>
           </tr>
           <tr>
-            <td><img src="../../images/01/176.jpg" alt="21" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6"><span class="STYLE1">阴阳倒乱刃</span><span class="STYLE2">[奇门秘籍]</span></td>
-           </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">&nbsp;</td>
-    <td colspan="4"><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">四</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">蜘蛛洞<span class="STYLE2">（传送代码10）绝情谷剧情后开启</span></td>
-      </tr>
-      <tr>
-        <td align="center" class="STYLE10">&nbsp;</td>
-        <td width="400" class="STYLE10">打几场蜘蛛，进入最里面触发剧情，          剧情后获得：<br />          
-          <span class="STYLE4">【玉女剑法】、【空明拳谱】、【左右互搏术】</span></td>
-        <td width="340" valign="top"><table width="100%" border="0">
-          <tr>
-            <td width="65" height="25">&nbsp;</td>
-            <td class="STYLE6">道德+2</td>
+            <td height="80" align="center" class="STYLE10">2</td>
+            <td height="47" valign="middle" class="STYLE10">
+              <p>与程英对话，小龙女离开队伍，<span class="STYLE6">程英入队，</span>获得<span class="STYLE4">【玉箫剑法】</span></p>
+            </td>
+            <td valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/123.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE1">玉箫剑法</span><span class="STYLE2">[剑法秘籍] </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/02/63.png" width="65" height="65" /></td>
+                  <td height="50" class="STYLE6">程英<span class="STYLE2">[队友]</span> <span class="STYLE12">加入</span></td>
+                </tr>
+              </table>
+            </td>
           </tr>
           <tr>
-            <td><img src="../../images/01/119.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6"><span class="STYLE1">玉女剑法</span><span class="STYLE2">[剑法秘籍]</span></td>
+            <td height="80" align="center" class="STYLE10">支线</td>
+            <td height="47" valign="middle" class="STYLE10">
+              <p>身上有<span class="STYLE4">【落英神剑掌】</span>秘籍、或者<span
+                  class="STYLE6">梅超风</span>在队伍，与冯铁匠对话，可收其去小村<br />在小村可以向冯铁匠购买一些装备或强化装备</p>
+            </td>
+            <td valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/53.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE103">判官笔</span><span class="STYLE2">[武器]</span> 300两
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/42.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE103">白虹剑</span><span class="STYLE2">[武器] </span>300两
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/62.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE103">佛心甲</span><span class="STYLE2">[防具]</span> 400两
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/46.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE103">绿波香露刀</span><span class="STYLE2">[武器]
+                    </span>400两</td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/39.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE103">白龙剑</span><span class="STYLE2">[武器] </span>500两
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/45.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE103">冷月宝刀</span><span class="STYLE2">[武器] </span>500两
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/50.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE103">伏魔杵</span><span class="STYLE2">[武器] </span>600两
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+      <td colspan="4">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">三</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11"><span class="STYLE2">
+                <font color="#000000">绝情谷</font>（传送代码22）在射雕英雄传桃花岛剧情后开启
+              </span></td>
           </tr>
           <tr>
-            <td><img src="../../images/01/98.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE6"><span class="STYLE1">空明拳谱</span><span class="STYLE2">[拳掌秘籍]</span></td>
+            <td align="center" class="STYLE10">1</td>
+            <td width="400" class="STYLE10">
+              <p><span class="STYLE2">
+                  <font color="#000000">进入大厅触发</font>
+                </span><span class="STYLE110">
+                  <font color="#000000">剧情，剧情</font>
+                </span><span class="STYLE2">
+                  <font color="#000000">后，主角被关起来<br />
+                    调查房间里的兵器架</font>
+                </span><span class="STYLE110">
+                  <font color="#000000">，</font>
+                </span><span class="STYLE2">
+                  <font color="#000000">获得</font>
+                </span><span class="STYLE103">[君子剑]</span><span class="STYLE2">、</span><span
+                  class="STYLE103">[淑女剑]</span></p>
+              <p><span class="STYLE2">
+                  <font color="#000000">调查房间大门，触发剧情</font>
+                </span></p>
+            </td>
+            <td width="340" valign="top">
+              <table width="100%" border="0">
+
+                <tr>
+                  <td width="65"><img src="../../images/01/279.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE2">
+                      <font color="#ff0000" class="STYLE103">君子剑</font>[武器]
+                      调查武器架获得
+                    </span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/280.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE12"><span class="STYLE6"><span class="STYLE103">淑女剑</span><span
+                        class="STYLE2">[武器]
+                        调查武器架获得</span></span></td>
+                </tr>
+              </table>
+            </td>
           </tr>
           <tr>
-            <td><img src="../../images/01/235.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE12" ><span class="STYLE6"><span class="STYLE1">左右互搏术</span><span class="STYLE2">[特技]</span> </span></td>
+            <td align="center" class="STYLE10">2</td>
+            <td width="400" class="STYLE10">
+              <p>剧情后进入大厅，触发战斗：</p>
+              <p class="STYLE1">VS 公孙止+绝情谷众</p>
+              <p><span class="STYLE2">公孙止天赋：每阵亡一个队友，集气速度增加2点</span></p>
+            </td>
+            <td width="340" valign="top">
+              <table width="100%" border="0">
+                <tr>
+                  
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" valign="top">&nbsp;</td>
+      <td colspan="4">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">四</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">蜘蛛洞<span
+                class="STYLE2">（传送代码10）绝情谷剧情后开启</span></td>
           </tr>
           <tr>
-            <td><img src="../../images/01/17.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE12" ><span class="STYLE6">天山雪莲</span>[<span class="STYLE2">灵药</span>] 击败右边岔路的蜘蛛开宝箱获得</td>
+            <td align="center" class="STYLE10">&nbsp;</td>
+            <td width="400" class="STYLE10">打几场蜘蛛，进入最里面触发剧情， 剧情后获得：<br />
+              <span class="STYLE4">【玉女剑法】、【空明拳谱】、【左右互搏术】</span>
+            </td>
+            <td width="340" valign="top">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65" height="25">&nbsp;</td>
+                  <td class="STYLE6">道德+2</td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/119.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE1">玉女剑法</span><span class="STYLE2">[剑法秘籍]</span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/98.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE1">空明拳谱</span><span class="STYLE2">[拳掌秘籍]</span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/235.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE12"><span class="STYLE6"><span class="STYLE1">左右互搏术</span><span
+                        class="STYLE2">[特技]</span> </span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/17.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE12"><span class="STYLE6">天山雪莲</span>[<span class="STYLE2">灵药</span>]
+                    击败右边岔路的蜘蛛开宝箱获得</td>
+                </tr>
+              </table>
+            </td>
           </tr>
-          </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  
-  <tr>
-    <td>&nbsp;</td>
-    <td colspan="4"><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">五</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">独孤剑冢<span class="STYLE2">（传送代码7）</span></td>
-      </tr>
-      <tr>
-        <td height="70" align="center" class="STYLE10">&nbsp;</td>
-        <td width="400" class="STYLE10"><p>进入山洞，拔起<span class="STYLE103">[玄铁剑]</span></p>
-          <p>调查墙壁上的文字，进入战斗：<br />
-            <span class="STYLE1">VS 神雕 </span></p>
-          <p>胜利后获得<span class="STYLE4">【玄铁剑法】</span></p></td>
-        <td width="340" valign="middle"><table width="100%" border="0">
-		  <tr>
-		    <td width="65"><img src="../../images/01/36.jpg" width="65" height="65" border="0"/></td>
-		    <td height="50" class="STYLE6"><span class="STYLE103">玄铁剑</span><span class="STYLE2">[武器]</span></td>
-		    </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="4">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
           <tr>
-            <td><img src="../../images/01/116.jpg" width="65" height="65" border="0"/></td>
-            <td height="50" class="STYLE12" ><span class="STYLE6"><span class="STYLE1">玄铁剑法</span><span class="STYLE2">[剑法秘籍]</span></span></td>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">五</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">独孤剑冢<span
+                class="STYLE2">（传送代码7）</span></td>
           </tr>
-          </table></td>
-      </tr>
-      
-    </table></td>
-  </tr>
-  
-  
-  <tr>
-    <td>&nbsp;</td>
-    <td colspan="4"><table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
-      <tr>
-        <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">六</td>
-        <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">重阳宫<span class="STYLE2">（传送代码19）</span></td>
-      </tr>
-      <tr>
-        <td height="40" align="center" class="STYLE10">&nbsp;</td>
-        <td width="400" valign="middle" class="STYLE10"><p>正邪分支</p></td>
-        <td width="340" valign="middle"><span class="STYLE107">注：畅想尹志平锁定神正，畅想张君宝锁定神邪</span></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td colspan="4" ><table width="100%" border="0">
-      <tr>
-        <td width="160" height="24" background="../../images/hun/bg03.gif">&nbsp;<a href="shendiao01.html" target="jn01"><img src="../../images/hun/h03.gif" width="24" height="17" border="0" /><span class="STYLE6">『正线』&nbsp;&nbsp;&nbsp;</span></a></td>
-        <td width="160" background="../../images/hun/bg03.gif">&nbsp;<a href="shendiao02.html" target="jn01"><img src="../../images/hun/h05.gif" width="24" height="17" border="0"/><span class="STYLE6">『邪线』&nbsp;&nbsp;</span>&nbsp;</a></td>
-        <td align="center" class="STYLE10" >&nbsp;</td>
-        </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td colspan="5"><iframe id="jn01"  name="jn01"onload="javascript:{dyniframesize('jn01');}" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" src="shendiao01.html" width="100%" height="0"  vspace="-5"> 您的浏览器不支持&quot; Frame&quot; </iframe></td>
-  </tr>
-</table>
+          <tr>
+            <td height="70" align="center" class="STYLE10">1</td>
+            <td width="400" class="STYLE10">
+              <p>进入山洞，触发战斗：<br />
+                <br />
+                <span class="STYLE1"><span class="STYLE12"><strong><img src="../../images/hun/dao3.gif" width="26"
+                        height="24" /></strong>vs</span> 大蛇</span><br />
+                <span class="STYLE2">战斗难度:★★</span><br />
+                <br />
+                胜后获得<span class="STYLE2">[食材]*8</span>
+              </p>
+            </td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td height="25">&nbsp;</td>
+                  <td class="STYLE12"><span class="STYLE6">道德+2</span></td>
+                </tr>
+                <tr>
+                  <td width="65" height="25"><img src="../../images/01/210.jpg" width="65" height="65" border="0" />
+                  </td>
+                  <td class="STYLE12">食材<span class="STYLE2">[材料]</span>*8</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td height="70" align="center" class="STYLE10">2</td>
+            <td width="400" class="STYLE10">
+              <p>进入山洞，拔起<span class="STYLE103">[玄铁剑]</span></p>
+              <p>调查墙壁上的文字，进入战斗：<br />
+                <span class="STYLE1">VS 神雕 </span>
+              </p>
+              <p>胜利后获得<span class="STYLE4">【玄铁剑法】</span></p>
+            </td>
+            <td width="340" valign="middle">
+              <table width="100%" border="0">
+                <tr>
+                  <td width="65"><img src="../../images/01/36.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE6"><span class="STYLE103">玄铁剑</span><span class="STYLE2">[武器]</span></td>
+                </tr>
+                <tr>
+                  <td><img src="../../images/01/116.jpg" width="65" height="65" border="0" /></td>
+                  <td height="50" class="STYLE12"><span class="STYLE6"><span class="STYLE1">玄铁剑法</span><span
+                        class="STYLE2">[剑法秘籍]</span></span></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="4">
+        <table width="100%" border="1" cellspacing="0" bordercolor="#CCCCCC" background="../../images/body_bg.jpg">
+          <tr>
+            <td width="55" height="20" align="center" background="../../images/body_bg2.jpg" class="STYLE11">六</td>
+            <td colspan="2" background="../../images/body_bg2.jpg" class="STYLE11">重阳宫<span
+                class="STYLE2">（传送代码19）</span></td>
+          </tr>
+          <tr>
+            <td height="40" align="center" class="STYLE10">&nbsp;</td>
+            <td width="400" valign="middle" class="STYLE10">
+              <p>正邪分支</p>
+            </td>
+            <td width="340" valign="middle"><span class="STYLE107">注：畅想尹志平锁定神正，畅想张君宝锁定神邪</span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="4">
+        <table width="100%" border="0">
+          <tr>
+            <td width="160" height="24" background="../../images/hun/bg03.gif">&nbsp;<a href="shendiao01.html"
+                target="jn01"><img src="../../images/hun/h03.gif" width="24" height="17" border="0" /><span
+                  class="STYLE6">『正线』&nbsp;&nbsp;&nbsp;</span></a></td>
+            <td width="160" background="../../images/hun/bg03.gif">&nbsp;<a href="shendiao02.html" target="jn01"><img
+                  src="../../images/hun/h05.gif" width="24" height="17" border="0" /><span
+                  class="STYLE6">『邪线』&nbsp;&nbsp;</span>&nbsp;</a></td>
+            <td align="center" class="STYLE10">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5"><iframe id="jn01" name="jn01" onload="javascript:{dyniframesize('jn01');}" marginwidth="0"
+          marginheight="0" frameborder="0" scrolling="no" src="shendiao01.html" width="100%" height="0" vspace="-5">
+          您的浏览器不支持&quot; Frame&quot; </iframe></td>
+    </tr>
+  </table>
 </body>
+
 </html>
